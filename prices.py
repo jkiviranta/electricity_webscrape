@@ -7,7 +7,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 
 # Set up the Chrome WebDriver
-service = Service(executable_path="chromedriver.exe")
+service = Service(executable_path="chromedriver")
 driver = webdriver.Chrome(service=service)
 
 # Open the target URL (replace this with the URL you want to scrape)
