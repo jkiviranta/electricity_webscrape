@@ -27,11 +27,11 @@ jobs:
 
       - name: Commit changes
         run: |
-          # Stage all CSV files in the Data folder (instead of just one)
+          # Stage all CSV files in the Data folder
           git add Price_data/*.csv  # This will include all CSV files in the "Data" folder
 
-          # Check if there are any changes to commit (to avoid errors if no changes exist)
-          git diff --quiet || git commit -m "Add new scraped data CSV files"
+          # Commit
+          git commit -m "Add new scraped data CSV files"
 
           # Push the changes back to the repository
           git push
@@ -43,11 +43,11 @@ jobs:
 
       - name: Commit changes
         run: |          
-          # Stage all CSV files in the Data folder (instead of just one)
+          # Stage all CSV files in the Data folder
           git add Contract_data/*.csv  # This will include all CSV files in the "Data" folder
 
-          # Check if there are any changes to commit (to avoid errors if no changes exist)
-          git diff --quiet || git commit -m "Add new scraped data CSV files"
+          # Commit
+          git commit -m "Add new scraped data CSV files"
 
           # Push the changes back to the repository
           git push
