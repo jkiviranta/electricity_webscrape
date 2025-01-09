@@ -26,7 +26,7 @@ def open_page():
     global driver
 
     # Set up the Chrome WebDriver
-    service = Service(executable_path="chromedriver.exe")
+    service = Service(executable_path="chromedriver")
     driver = webdriver.Chrome(service=service)
 
     # Open the target URL
