@@ -23,11 +23,31 @@ jobs:
       - name: Execute price scrape
         run: python prices.py
 
+      - name: Commit changes
+        run: |
+          # Stage all CSV files in the Data folder (instead of just one)
+          git add Price_data/*.csv  # This will include all CSV files in the "Data" folder
+
+          # Check if there are any changes to commit (to avoid errors if no changes exist)
+          git diff --quiet || git commit -m "Add new scraped data CSV files"
+
+          # Push the changes back to the repository
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Required to authenticate the commit
+      
       - name: Execute contract scrape
         run: python contracts.py
 
       - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Update csv-files
-        id: auto-commit-action
+        run: |          
+          # Stage all CSV files in the Data folder (instead of just one)
+          git add Contract_data/*.csv  # This will include all CSV files in the "Data" folder
+
+          # Check if there are any changes to commit (to avoid errors if no changes exist)
+          git diff --quiet || git commit -m "Add new scraped data CSV files"
+
+          # Push the changes back to the repository
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Required to authenticate the commit
