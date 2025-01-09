@@ -27,14 +27,10 @@ jobs:
 
       - name: Commit changes
         run: |
-          # Stage all CSV files in the Data folder
-          git add Price_data/*.csv  # This will include all CSV files in the "Data" folder
-
-          # Commit
+          git pull origin main --rebase  # Ensure the local copy is up-to-date with remote
+          git add Price_data/*.csv
           git commit -m "Add new scraped data CSV files"
-
-          # Push the changes back to the repository
-          git push
+          git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Required to authenticate the commit
       
@@ -43,13 +39,9 @@ jobs:
 
       - name: Commit changes
         run: |          
-          # Stage all CSV files in the Data folder
-          git add Contract_data/*.csv  # This will include all CSV files in the "Data" folder
-
-          # Commit
+          git pull origin main --rebase  # Ensure the local copy is up-to-date with remote
+          git add Price_data/*.csv
           git commit -m "Add new scraped data CSV files"
-
-          # Push the changes back to the repository
-          git push
+          git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Required to authenticate the commit
