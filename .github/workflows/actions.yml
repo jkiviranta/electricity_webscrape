@@ -2,7 +2,7 @@ name: Run web scraper
 
 on: 
   schedule:
-    - cron: '35 15 * * *' # Run the workflow every day at 18:00 UTC+2
+    - cron: '5 16 * * *' # Run the workflow every day at 18:00 UTC+2
 
 jobs:
   build:
