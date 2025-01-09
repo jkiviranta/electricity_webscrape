@@ -192,7 +192,6 @@ df = pd.DataFrame(scraped_data, columns=columns)
 df["Date"] = current_date
 
 # Save to folder "Contract_data" that is in the same path as "scraped_data.csv" and add the current date under the variable "curren_date" to the file name (e.g. scraped_price_data20240228.csv)
-# output_folder = "C:/Users/Juuso/OneDrive - KU Leuven/Tutkimus/HH electricity contract comparison/Code_repository_temp/Contract_data"
 output_folder = "Contract_data"
 file_name_w_date = f"scraped_data_{current_date}.csv"
 output_file_path = f"{output_folder}/{file_name_w_date}"
