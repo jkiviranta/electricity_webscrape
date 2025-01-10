@@ -209,4 +209,4 @@ for contract_type in [2,3]:
 output_folder = "Contract_data"
 file_name_w_date = f"scraped_contract_data_{current_date}.csv"
 output_file_path = f"{output_folder}/{file_name_w_date}"
-df_cleaned.to_csv(output_file_path, index=False)
+df.to_csv(output_file_path, index=False)
