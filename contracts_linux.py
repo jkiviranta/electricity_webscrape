@@ -40,7 +40,7 @@ def open_page():
     driver.get("https://www.sahkonhinta.fi/")
 
     # Wait for the page to load
-    time.sleep(5)
+    time.sleep(2)
 
     # Wait for the Postal Code field to be visible
     postal_code_input = WebDriverWait(driver, 10).until(
@@ -81,7 +81,7 @@ def scrape_all_alternatives(start_n_alternative=3):
             ).click()
 
             # Wait for the page to load
-            time.sleep(3)
+            time.sleep(2)
 
             # Scrape the data for the current alternative
             data = scrape_alternative()
@@ -94,7 +94,7 @@ def scrape_all_alternatives(start_n_alternative=3):
             ).click()
 
             # Wait for the main page to reload
-            time.sleep(3)
+            time.sleep(2)
 
             # Increment to the next alternative
             n_alternative += 1
@@ -170,7 +170,7 @@ for contract_type in [2,3]:
         ).click()
 
         # Wait for the page to load
-        time.sleep(10)
+        time.sleep(5)
 
         # Open all alternatives (Click on "Näytä kaikki tarjoukset" button)
         try:
@@ -179,7 +179,7 @@ for contract_type in [2,3]:
             ).click()
 
             # Wait for the alternatives to load
-            time.sleep(3)
+            time.sleep(2)
 
             # Iterate through all alternatives
             scrape_all_alternatives()
