@@ -186,6 +186,11 @@ for contract_type in [2,3]:
         except Exception as e:
             # If there's an issue (e.g., no alternatives), print the error and skip to the next combination
             print(f"No alternatives found for contract type {contract_type} and pricing model {pricing_model}. Skipping to next.")
+
+            # Convert the scraped data to a pandas DataFrame
+            columns = ['Name_data_0', 'Data_0','Name_data_1', 'Data_1', 'Name_data_2', 'Data_2', 'Data_3', 'Data_4', 'Data_5']
+            df = pd.DataFrame(scraped_data, columns=columns)
+            df["Date"] = current_date
             
             # Close the driver after scraping
             driver.quit()
@@ -196,9 +201,9 @@ for contract_type in [2,3]:
 #################################################################
 
 # Convert the scraped data to a pandas DataFrame
-columns = ['Name_data_0', 'Data_0','Name_data_1', 'Data_1', 'Name_data_2', 'Data_2', 'Data_3', 'Data_4', 'Data_5']
-df = pd.DataFrame(scraped_data, columns=columns)
-df["Date"] = current_date
+#columns = ['Name_data_0', 'Data_0','Name_data_1', 'Data_1', 'Name_data_2', 'Data_2', 'Data_3', 'Data_4', 'Data_5']
+#df = pd.DataFrame(scraped_data, columns=columns)
+#df["Date"] = current_date
 
 # Save to folder "Contract_data" that is in the same path as "scraped_data.csv" and add the current date under the variable "current_date" to the file name (e.g. scraped_data20240228.csv)
 output_folder = "Contract_data"
