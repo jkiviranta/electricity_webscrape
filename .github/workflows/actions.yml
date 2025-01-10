@@ -1,9 +1,9 @@
 name: Run web scraper
 
-#on: 
-#  schedule:
-#    - cron: '0 14 * * *' # Run the workflow every day at 16:00 UTC+2
-on: [workflow_dispatch]
+on: 
+  schedule:
+    - cron: '30 12 * * *' # Run the workflow every day at 16:00 UTC+2
+#on: [workflow_dispatch]
 
 jobs:
   build:
@@ -45,8 +45,8 @@ jobs:
 
       - name: Commit changes
         run: |          
-          git pull origin main --rebase  # Ensure the local copy is up-to-date with remote
-          git add Price_data/*.csv
+          git pull origin main --rebase
+          git add Contract_data/*.csv
           git commit -m "Add new scraped data CSV files"
           git push origin main
         env:
