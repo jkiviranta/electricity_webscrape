@@ -149,8 +149,9 @@ while current_date <= end_date:
     # Convert the scraped table data into a pandas DataFrame
     df = pd.DataFrame(table_data)
 
-    # Keep only data rows
-    df_cleaned = df.iloc[2:26]  # Select rows 3-27 (indexes 2-26)
+    # Keep only data rows (Change on 13.3.2025 following a website change affecting data published from 3.3.2025 on
+    #df_cleaned = df.iloc[2:26]  # Select rows 3-27 (indexes 2-26)
+    df_cleaned = df.iloc[1:25]  # Select rows 2-26 (indexes 1-25)
 
     # Drop the first column
     df_cleaned = df_cleaned.drop(df.columns[0], axis=1)
