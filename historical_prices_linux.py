@@ -46,8 +46,12 @@ WebDriverWait(driver, 10).until(
 
 # Wait for the table to be visible
 WebDriverWait(driver, 10).until(
-    EC.presence_of_element_located((By.XPATH, '//*[@id="grid-wrapper"]/div[1]/dx-data-grid/div[1]'))
+    EC.presence_of_element_located((By.XPATH, '//*[@id="grid-wrapper"]/div[1]/dx-data-grid/div'))
 )
+
+# Possible alternative Xpaths if the above doesn't work. 
+#//*[@id="grid-wrapper"]/div[1]/dx-data-grid/div[1]
+#//*[@id="grid-wrapper"]/div[1]/dx-data-grid/div/div[7]
 
 # Locate the table element
 table = driver.find_element(By.XPATH, '//*[@id="grid-wrapper"]/div[1]/dx-data-grid/div[1]')
