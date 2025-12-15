@@ -201,12 +201,17 @@ def open_page():
         EC.presence_of_element_located((By.XPATH, '//*[@id="annual_consumption"]'))
     )
 
+    # Scroll into view
+    driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", annual_electricity_input)
+    time.sleep(0.2)
+
     # Clear and enter new value
     annual_electricity_input.clear()
     annual_electricity_input.send_keys("2000")
 
     # Click "nästa"
     safe_click(driver, '//*[@id="next-page"]')
+    time.sleep(0.2)
 
     # Select kvartspris
     safe_click(driver, '//*[@id="app"]/div/div[1]/div[2]/div[1]/a[1]')
