@@ -264,6 +264,19 @@ def scrape_all_alternatives(start_n_alternative=1, scrape_function=scrape_altern
                 show_all_xpath = (
                     '//*[@id="svid12_330e0006183eeab50d8c0b"]/div[2]/div/div[2]/div[2]/div[2]/div[10]/div/button'
                 )
+        
+                # Scroll to bottom to force lazy-load
+                driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                time.sleep(0.5)
+        
+                # Wait for the button to appear in DOM
+                WebDriverWait(driver, 5).until(
+                    EC.presence_of_element_located((By.XPATH, show_all_xpath))
+                )
+
+                show_all_xpath = (
+                    '//*[@id="svid12_330e0006183eeab50d8c0b"]/div[2]/div/div[2]/div[2]/div[2]/div[10]/div/button'
+                )
                 safe_click(driver, show_all_xpath)
                 time.sleep(0.5)
                 show_all_clicked = True
