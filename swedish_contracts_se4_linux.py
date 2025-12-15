@@ -140,11 +140,11 @@ def open_page():
     service = Service(driver_path)
     options = webdriver.ChromeOptions()
     
-    # If you need to run headless (without opening a window), use this:
+    # Set options
     options.add_argument("--headless")
     options.add_argument("--disable-gpu")
-    options.add_argument("--start-maximized")
-    options.add_experimental_option("excludeSwitches", ["enable-logging"])
+    #options.add_argument("--start-maximized")
+    #options.add_experimental_option("excludeSwitches", ["enable-logging"])
     
     # Initialize the driver with specified options
     driver = webdriver.Chrome(service=service, options=options)    
