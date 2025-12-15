@@ -249,16 +249,28 @@ def scrape_all_alternatives(start_n_alternative=1, scrape_function=scrape_altern
         print(f"Scraping alternative {i} of {n_alternatives}")
 
         # Click "Show All" if needed
-        if i >= n_before_show_all + 1:
+        #if i >= n_before_show_all + 1:
+        #    try:
+        #        safe_click(driver, '//*[@id="svid12_330e0006183eeab50d8c0b"]/div[2]/div/div[2]/div[2]/div[2]/div[10]/div/button')
+        #        time.sleep(0.3)  # Allow new items to load
+        #    except Exception as e:
+        #        print("❌ Could not click 'Show All' button:", e)
+        #        continue
+
+
+        # Click "Show All" only once
+        if i >= n_before_show_all + 1 and not show_all_clicked:
             try:
                 show_all_xpath = (
                     '//*[@id="svid12_330e0006183eeab50d8c0b"]/div[2]/div/div[2]/div[2]/div[2]/div[10]/div/button'
                 )
                 safe_click(driver, show_all_xpath)
-                time.sleep(0.3)  # Allow new items to load
+                time.sleep(0.5)
+                show_all_clicked = True
             except Exception as e:
                 print("❌ Could not click 'Show All' button:", e)
-                continue
+                show_all_clicked = True  # Prevent repeated failures
+
 
         # Try primary XPath for the alternative
         xpath_primary = (
