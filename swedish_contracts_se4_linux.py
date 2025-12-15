@@ -15,6 +15,38 @@ from webdriver_manager.chrome import ChromeDriverManager
 # Define functions and set date
 #################################################################
 
+# Define a safe click that waits until the element is visible and scrolls to it
+def safe_click(driver, xpath, timeout=5):
+    # Wait until the element is present in the DOM
+    element = WebDriverWait(driver, timeout).until(
+        EC.presence_of_element_located((By.XPATH, xpath))
+    )
+
+    # Scroll it into view
+    driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", element)
+
+    # Wait until it is actually clickable
+    element = WebDriverWait(driver, timeout).until(
+        EC.element_to_be_clickable((By.XPATH, xpath))
+    )
+
+    # Click
+    element.click()
+
+
+# Function to safely get text from an element
+def safe_get_text(driver, xpath, timeout=5):
+    try:
+        element = WebDriverWait(driver, timeout).until(
+            EC.presence_of_element_located((By.XPATH, xpath))
+        )
+        driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", element)
+        return element.text.strip()
+    except:
+        return ""
+
+
+
 # Function to scrape data from a specific alternative
 def scrape_alternative_dynamic_variable():
 
@@ -24,29 +56,29 @@ def scrape_alternative_dynamic_variable():
         # Collect information for the energy source
         energy_sources = []
         for i in range(1, 7):  # Try i from 1 to 6
-            try:
-                xpath = f'//*[@id="sectionTwo"]/div[2]/div/div[{i}]/p'
-                text = driver.find_element(By.XPATH, xpath).text
-                if text:
-                    energy_sources.append(text.strip())
-            except:
-                break  # Stop if the element doesn't exist
+            xpath = f'//*[@id="sectionTwo"]/div[2]/div/div[{i}]/p'
+            text = safe_get_text(driver, xpath)
+            if text:
+                energy_sources.append(text)
+            else:
+                break  # Stop if the element doesn't exist or is empty
 
         # Join all found energy sources with underscores
         energy_source_combined = "_".join(energy_sources)
 
         return {
-            "contract_name": driver.find_element(By.XPATH, '//*[@id="svid12_3b08dbd5183b0def2ee18e"]/div[2]/div/div[1]/h1').text,
-            "retailer_name": driver.find_element(By.XPATH, '//*[@id="svid12_3b08dbd5183b0def2ee18e"]/div[2]/div/div[1]/p').text,
-            "fixed_price_element_ore_kwh": driver.find_element(By.XPATH, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[1]/td[2]').text,
+            "contract_name": safe_get_text(driver, '//*[@id="svid12_3b08dbd5183b0def2ee18e"]/div[2]/div/div[1]/h1'),
+            "retailer_name": safe_get_text(driver, '//*[@id="svid12_3b08dbd5183b0def2ee18e"]/div[2]/div/div[1]/p'),
+            "fixed_price_element_ore_kwh": safe_get_text(driver, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[1]/td[2]'),
             "unit_price_ore_kwh": 0,
-            "wholesale_price_monthly_avg_ore_kwh": driver.find_element(By.XPATH, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[2]/td[2]').text,
-            "markup_ore_kwh": driver.find_element(By.XPATH, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[3]/td[2]').text,
-            "variable_costs_ore_kwh": driver.find_element(By.XPATH, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[4]/td[2]').text,
-            "vat_ore_kwh": driver.find_element(By.XPATH, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[5]/td[2]').text,
-            "total_ore_kwh": driver.find_element(By.XPATH, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[6]/td[2]').text,
+            "wholesale_price_monthly_avg_ore_kwh": safe_get_text(driver, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[2]/td[2]'),
+            "markup_ore_kwh": safe_get_text(driver, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[3]/td[2]'),
+            "variable_costs_ore_kwh": safe_get_text(driver, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[4]/td[2]'),
+            "vat_ore_kwh": safe_get_text(driver, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[5]/td[2]'),
+            "total_ore_kwh": safe_get_text(driver, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[6]/td[2]'),
             "energy_source": energy_source_combined
         }
+
     except Exception as e:
         print(f"Error scraping alternative: {e}")
         return None
@@ -61,29 +93,29 @@ def scrape_alternative_mixed():
         # Collect information for the energy source
         energy_sources = []
         for i in range(1, 7):  # Try i from 1 to 6
-            try:
-                xpath = f'//*[@id="sectionTwo"]/div[2]/div/div[{i}]/p'
-                text = driver.find_element(By.XPATH, xpath).text
-                if text:
-                    energy_sources.append(text.strip())
-            except:
-                break  # Stop if the element doesn't exist
+            xpath = f'//*[@id="sectionTwo"]/div[2]/div/div[{i}]/p'
+            text = safe_get_text(driver, xpath)
+            if text:
+                energy_sources.append(text)
+            else:
+                break  # Stop if the element doesn't exist or is empty
 
         # Join all found energy sources with underscores
         energy_source_combined = "_".join(energy_sources)
 
         return {
-            "contract_name": driver.find_element(By.XPATH, '//*[@id="svid12_3b08dbd5183b0def2ee18e"]/div[2]/div/div[1]/h1').text,
-            "retailer_name": driver.find_element(By.XPATH, '//*[@id="svid12_3b08dbd5183b0def2ee18e"]/div[2]/div/div[1]/p').text,
-            "fixed_price_element_ore_kwh": driver.find_element(By.XPATH, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[1]/td[2]').text,
-            "unit_price_ore_kwh": driver.find_element(By.XPATH, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[2]/td[2]').text,
-            "wholesale_price_monthly_avg_ore_kwh": driver.find_element(By.XPATH, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[3]/td[2]').text,
-            "markup_ore_kwh": driver.find_element(By.XPATH, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[4]/td[2]').text,
-            "variable_costs_ore_kwh": driver.find_element(By.XPATH, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[5]/td[2]').text,
-            "vat_ore_kwh": driver.find_element(By.XPATH, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[6]/td[2]').text,
-            "total_ore_kwh": driver.find_element(By.XPATH, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[7]/td[2]').text,
+            "contract_name": safe_get_text(driver, '//*[@id="svid12_3b08dbd5183b0def2ee18e"]/div[2]/div/div[1]/h1'),
+            "retailer_name": safe_get_text(driver, '//*[@id="svid12_3b08dbd5183b0def2ee18e"]/div[2]/div/div[1]/p'),
+            "fixed_price_element_ore_kwh": safe_get_text(driver, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[1]/td[2]'),
+            "unit_price_ore_kwh": safe_get_text(driver, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[2]/td[2]'),
+            "wholesale_price_monthly_avg_ore_kwh": safe_get_text(driver, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[3]/td[2]'),
+            "markup_ore_kwh": safe_get_text(driver, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[4]/td[2]'),
+            "variable_costs_ore_kwh": safe_get_text(driver, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[5]/td[2]'),
+            "vat_ore_kwh": safe_get_text(driver, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[6]/td[2]'),
+            "total_ore_kwh": safe_get_text(driver, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[7]/td[2]'),
             "energy_source": energy_source_combined
         }
+
     except Exception as e:
         print(f"Error scraping alternative: {e}")
         return None
@@ -98,29 +130,29 @@ def scrape_alternative_fixed():
         # Collect information for the energy source
         energy_sources = []
         for i in range(1, 7):  # Try i from 1 to 6
-            try:
-                xpath = f'//*[@id="sectionTwo"]/div[2]/div/div[{i}]/p'
-                text = driver.find_element(By.XPATH, xpath).text
-                if text:
-                    energy_sources.append(text.strip())
-            except:
-                break  # Stop if the element doesn't exist
+            xpath = f'//*[@id="sectionTwo"]/div[2]/div/div[{i}]/p'
+            text = safe_get_text(driver, xpath)
+            if text:
+                energy_sources.append(text)
+            else:
+                break  # Stop if the element doesn't exist or is empty
 
         # Join all found energy sources with underscores
         energy_source_combined = "_".join(energy_sources)
-        
+
         return {
-            "contract_name": driver.find_element(By.XPATH, '//*[@id="svid12_3b08dbd5183b0def2ee18e"]/div[2]/div/div[1]/h1').text,
-            "retailer_name": driver.find_element(By.XPATH, '//*[@id="svid12_3b08dbd5183b0def2ee18e"]/div[2]/div/div[1]/p').text,
-            "fixed_price_element_ore_kwh": driver.find_element(By.XPATH, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[1]/td[2]').text,
-            "unit_price_ore_kwh": driver.find_element(By.XPATH, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[2]/td[2]').text,
+            "contract_name": safe_get_text(driver, '//*[@id="svid12_3b08dbd5183b0def2ee18e"]/div[2]/div/div[1]/h1'),
+            "retailer_name": safe_get_text(driver, '//*[@id="svid12_3b08dbd5183b0def2ee18e"]/div[2]/div/div[1]/p'),
+            "fixed_price_element_ore_kwh": safe_get_text(driver, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[1]/td[2]'),
+            "unit_price_ore_kwh": safe_get_text(driver, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[2]/td[2]'),
             "wholesale_price_monthly_avg_ore_kwh": 0,
             "markup_ore_kwh": 0,
             "variable_costs_ore_kwh": 0,
-            "vat_ore_kwh": driver.find_element(By.XPATH, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[3]/td[2]').text,
-            "total_ore_kwh": driver.find_element(By.XPATH, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[4]/td[2]').text,
+            "vat_ore_kwh": safe_get_text(driver, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[3]/td[2]'),
+            "total_ore_kwh": safe_get_text(driver, '//*[@id="sectionThree"]/div[1]/table/tbody/tr[4]/td[2]'),
             "energy_source": energy_source_combined
         }
+
     except Exception as e:
         print(f"Error scraping alternative: {e}")
         return None
@@ -130,77 +162,60 @@ def scrape_alternative_fixed():
 global current_date
 current_date = datetime.now().strftime('%Y-%m-%d')
 
-# Function to get to the page with the contract options
 def open_page():
-    
+
     global driver
 
     # Set up the Chrome WebDriver using WebDriver Manager for automatic driver management
     driver_path = ChromeDriverManager().install()
     service = Service(driver_path)
     options = webdriver.ChromeOptions()
-    
+
     # Set options
-    #options.add_argument("--headless")
-    #options.add_argument("--disable-gpu")
-    #options.add_experimental_option("excludeSwitches", ["enable-logging"])
     options.add_argument("--headless=new")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--window-size=1920,1080")
 
-    
     # Initialize the driver with specified options
-    driver = webdriver.Chrome(service=service, options=options)    
+    driver = webdriver.Chrome(service=service, options=options)
 
     # Open the target URL
     driver.get("https://elpriskollen.se/")
     time.sleep(0.3)
 
-    # Don't approve cookies
-    WebDriverWait(driver, 5).until(
-        EC.element_to_be_clickable((By.XPATH, '/html/body/div[2]/div/section/footer/form[2]/button'))
-    ).click()
+    # Reject cookies
+    safe_click(driver, '/html/body/div[2]/div/section/footer/form[2]/button')
 
-    # Fill postal code (malmö 211 09, elområde 4)
+    # Fill postal code
     postal_code_input = WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.XPATH, '//*[@id="pcode"]'))
     )
     postal_code_input.send_keys("211 09")
 
     # Click "nästa"
-    WebDriverWait(driver, 5).until(
-        EC.element_to_be_clickable((By.XPATH, '//*[@id="next-page"]'))
-    ).click()
+    safe_click(driver, '//*[@id="next-page"]')
 
-    # Wait for the annual consumption field to be visible
+    # Wait for the annual consumption field
     annual_electricity_input = WebDriverWait(driver, 5).until(
         EC.presence_of_element_located((By.XPATH, '//*[@id="annual_consumption"]'))
     )
 
-    # Clear the default value in the Annual Consumption field
+    # Clear and enter new value
     annual_electricity_input.clear()
-
-    # Now send the new Annual Consumption value
     annual_electricity_input.send_keys("2000")
 
-    # Press "nästa" to proceed forward
-    WebDriverWait(driver, 5).until(
-        EC.element_to_be_clickable((By.XPATH, '//*[@id="next-page"]'))
-    ).click()
+    # Click "nästa"
+    safe_click(driver, '//*[@id="next-page"]')
 
-        # Select kvartspris
-    WebDriverWait(driver, 5).until(
-        EC.element_to_be_clickable((By.XPATH, '//*[@id="app"]/div/div[1]/div[2]/div[1]/a[1]'))
-    ).click()
+    # Select kvartspris
+    safe_click(driver, '//*[@id="app"]/div/div[1]/div[2]/div[1]/a[1]')
 
     # Click ready to see offers
-    WebDriverWait(driver, 5).until(
-        EC.element_to_be_clickable((By.XPATH, '//*[@id="app"]/div/div[3]/a[2]'))
-    ).click()
+    safe_click(driver, '//*[@id="app"]/div/div[3]/a[2]')
 
 
-# Function to loop through all alternatives on the current page and scrape data for each one (starting from index 3)
+# Function to scrape all alternatives
 def scrape_all_alternatives(start_n_alternative=1, scrape_function=scrape_alternative_dynamic_variable):
 
     global scraped_data
@@ -209,10 +224,11 @@ def scrape_all_alternatives(start_n_alternative=1, scrape_function=scrape_altern
     try:
         # Try to get the number of alternatives
         n_alternatives_text = WebDriverWait(driver, 5).until(
-            EC.presence_of_element_located((By.XPATH, '//*[@id="svid12_330e0006183eeab50d8c0b"]/div[2]/div/div[2]/div[2]/div[1]/div/p/strong'))
+            EC.presence_of_element_located((By.XPATH, 
+                '//*[@id="svid12_330e0006183eeab50d8c0b"]/div[2]/div/div[2]/div[2]/div[1]/div/p/strong'
+            ))
         ).text.strip()
 
-        # If empty, skip scraping
         if not n_alternatives_text.isdigit():
             print("⚠️ No alternatives found today, skipping scraping.")
             return
@@ -226,71 +242,64 @@ def scrape_all_alternatives(start_n_alternative=1, scrape_function=scrape_altern
         print(f"❌ Unexpected error while checking alternatives: {e}")
         return
 
-    # Number of alternatives before clicking "Show All"
+    # Number of alternatives visible before clicking "Show All"
     n_before_show_all = 9
-    
+
     for i in range(start_n_alternative, n_alternatives + 1):
         print(f"Scraping alternative {i} of {n_alternatives}")
-        
+
+        # Click "Show All" if needed
         if i >= n_before_show_all + 1:
             try:
-                show_all_button = WebDriverWait(driver, 3).until(
-                    EC.element_to_be_clickable((By.XPATH, '//*[@id="svid12_330e0006183eeab50d8c0b"]/div[2]/div/div[2]/div[2]/div[2]/div[10]/div/button'))
+                show_all_xpath = (
+                    '//*[@id="svid12_330e0006183eeab50d8c0b"]/div[2]/div/div[2]/div[2]/div[2]/div[10]/div/button'
                 )
-                driver.execute_script("arguments[0].scrollIntoView(true);", show_all_button)
-                time.sleep(0.3)
-                show_all_button.click()
-                time.sleep(0.3)  # Wait for the additional alternatives to load
+                safe_click(driver, show_all_xpath)
+                time.sleep(0.3)  # Allow new items to load
             except Exception as e:
                 print("❌ Could not click 'Show All' button:", e)
                 continue
 
-        # Open the i-th alternative
-       # Try the first XPath
+        # Try primary XPath for the alternative
+        xpath_primary = (
+            f'//*[@id="svid12_330e0006183eeab50d8c0b"]/div[2]/div/div[2]/div[2]/div[2]/div[{i}]/div/div[5]/div[3]/a'
+        )
+
         try:
-            xpath_primary = f'//*[@id="svid12_330e0006183eeab50d8c0b"]/div[2]/div/div[2]/div[2]/div[2]/div[{i}]/div/div[5]/div[3]/a'
-            element = WebDriverWait(driver, 3).until(
-                EC.element_to_be_clickable((By.XPATH, xpath_primary))
-            )
-        except TimeoutException:
+            safe_click(driver, xpath_primary)
+        except Exception:
             print(f"⚠️ Primary XPath failed for alternative {i}, trying fallback")
-            # Try the fallback XPath
-            xpath_fallback = f'//*[@id="svid12_330e0006183eeab50d8c0b"]/div[2]/div/div[2]/div[2]/div[2]/div[{i}]/div/div[5]/div[2]/a'
+
+            # Try fallback XPath
+            xpath_fallback = (
+                f'//*[@id="svid12_330e0006183eeab50d8c0b"]/div[2]/div/div[2]/div[2]/div[2]/div[{i}]/div/div[5]/div[2]/a'
+            )
+
             try:
-                element = WebDriverWait(driver, 3).until(
-                    EC.element_to_be_clickable((By.XPATH, xpath_fallback))
-                )
-            except TimeoutException:
+                safe_click(driver, xpath_fallback)
+            except Exception:
                 print(f"❌ Both XPaths failed for alternative {i}, skipping")
-                continue       
+                continue
 
-        # Scroll and click the found element
-        driver.execute_script("arguments[0].scrollIntoView(true);", element)
-        time.sleep(0.3)  # Let any animations finish
-        element.click()
-
-        # Wait for the page to load
+        # Wait briefly for the page to load
         time.sleep(0.3)
 
-        # Scrape data from the alternative
+        # Scrape data
         scraped_data_i = scrape_function()
-
-        # If data was scraped successfully, append it to the list
         if scraped_data_i:
             scraped_data.append(scraped_data_i)
 
-        # Go back to the main offers page
+        # Return to the list
         driver.back()
+        time.sleep(0.3)
 
 
 # Function for pressing the button to select all contract types
 def select_all_contract_types():
-    element = WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable((By.XPATH, '//*[@id="svid12_330e0006183eeab50d8c0b"]/div[2]/div/div[2]/div[1]/div[2]/a/span[1]'))
+    safe_click(
+        driver,
+        '//*[@id="svid12_330e0006183eeab50d8c0b"]/div[2]/div/div[2]/div[1]/div[2]/a/span[1]'
     )
-    driver.execute_script("arguments[0].scrollIntoView(true);", element)
-    time.sleep(0.3)  # Let any animations finish
-    element.click()
 
 
 #################################################################
@@ -326,12 +335,7 @@ select_all_contract_types()
 select_all_contract_types()
 
 # Choose hourly price contracts
-element = WebDriverWait(driver, 10).until(
-    EC.element_to_be_clickable((By.XPATH, '//*[@id="AvtalMedTimpris"]/div/a/span[1]'))
-)
-driver.execute_script("arguments[0].scrollIntoView(true);", element)
-time.sleep(0.3)  # Let any animations finish
-element.click()
+safe_click(driver, '//*[@id="AvtalMedTimpris"]/div/a/span[1]')
 time.sleep(0.3)
 
 # Scrape the alternatives
@@ -346,12 +350,7 @@ select_all_contract_types()
 select_all_contract_types()
 
 # Choose variable contracts
-element = WebDriverWait(driver, 10).until(
-    EC.element_to_be_clickable((By.XPATH, '//*[@id="RorligaAvtal"]/div/a/span[1]'))
-)
-driver.execute_script("arguments[0].scrollIntoView(true);", element)
-time.sleep(0.3)  # Let any animations finish
-element.click()
+safe_click(driver, '//*[@id="RorligaAvtal"]/div/a/span[1]')
 time.sleep(0.3)
 
 # Scrape the alternatives
@@ -366,12 +365,7 @@ select_all_contract_types()
 select_all_contract_types()
 
 # Choose mixed contracts
-element = WebDriverWait(driver, 10).until(
-    EC.element_to_be_clickable((By.XPATH, '//*[@id="Mixavtal"]/div/a/span[1]'))
-)
-driver.execute_script("arguments[0].scrollIntoView(true);", element)
-time.sleep(0.3)  # Let any animations finish
-element.click()
+safe_click(driver, '//*[@id="Mixavtal"]/div/a/span[1]')
 time.sleep(0.3)
 
 # Scrape the alternatives
@@ -386,12 +380,7 @@ select_all_contract_types()
 select_all_contract_types()
 
 # Choose fixed contracts - 6 months
-element = WebDriverWait(driver, 10).until(
-    EC.element_to_be_clickable((By.XPATH, '//*[@id="FastaAvtal"]/div[1]/a/span[1]'))
-)
-driver.execute_script("arguments[0].scrollIntoView(true);", element)
-time.sleep(0.3)  # Let any animations finish
-element.click()
+safe_click(driver, '//*[@id="FastaAvtal"]/div[1]/a/span[1]')
 time.sleep(0.3)
 
 # Scrape the alternatives
@@ -406,12 +395,7 @@ select_all_contract_types()
 select_all_contract_types()
 
 # Choose fixed contracts - 1 year
-element = WebDriverWait(driver, 10).until(
-    EC.element_to_be_clickable((By.XPATH, '//*[@id="FastaAvtal"]/div[2]/a/span[1]'))
-)
-driver.execute_script("arguments[0].scrollIntoView(true);", element)
-time.sleep(0.3)  # Let any animations finish
-element.click()
+safe_click(driver, '//*[@id="FastaAvtal"]/div[2]/a/span[1]')
 time.sleep(0.3)
 
 # Scrape the alternatives
@@ -426,12 +410,7 @@ select_all_contract_types()
 select_all_contract_types()
 
 # Choose fixed contracts - 2 years
-element = WebDriverWait(driver, 10).until(
-    EC.element_to_be_clickable((By.XPATH, '//*[@id="FastaAvtal"]/div[3]/a/span[1]'))
-)
-driver.execute_script("arguments[0].scrollIntoView(true);", element)
-time.sleep(0.3)  # Let any animations finish
-element.click()
+safe_click(driver, '//*[@id="FastaAvtal"]/div[3]/a/span[1]')
 time.sleep(0.3)
 
 # Scrape the alternatives
@@ -446,12 +425,7 @@ select_all_contract_types()
 select_all_contract_types()
 
 # Choose fixed contracts - 3 years
-element = WebDriverWait(driver, 10).until(
-    EC.element_to_be_clickable((By.XPATH, '//*[@id="FastaAvtal"]/div[4]/a/span[1]'))
-)
-driver.execute_script("arguments[0].scrollIntoView(true);", element)
-time.sleep(0.3)  # Let any animations finish
-element.click()
+safe_click(driver, '//*[@id="FastaAvtal"]/div[4]/a/span[1]')
 time.sleep(0.3)
 
 # Scrape the alternatives
@@ -466,12 +440,7 @@ select_all_contract_types()
 select_all_contract_types()
 
 # Choose fixed contracts - 4 years
-element = WebDriverWait(driver, 10).until(
-    EC.element_to_be_clickable((By.XPATH, '//*[@id="FastaAvtal"]/div[5]/a/span[1]'))
-)
-driver.execute_script("arguments[0].scrollIntoView(true);", element)
-time.sleep(0.3)  # Let any animations finish
-element.click()
+safe_click(driver, '//*[@id="FastaAvtal"]/div[5]/a/span[1]')
 time.sleep(0.3)
 
 # Scrape the alternatives
@@ -486,12 +455,7 @@ select_all_contract_types()
 select_all_contract_types()
 
 # Choose fixed contracts - 5 years
-element = WebDriverWait(driver, 10).until(
-    EC.element_to_be_clickable((By.XPATH, '//*[@id="FastaAvtal"]/div[6]/a/span[1]'))
-)
-driver.execute_script("arguments[0].scrollIntoView(true);", element)
-time.sleep(0.3)  # Let any animations finish
-element.click()
+safe_click(driver, '//*[@id="FastaAvtal"]/div[6]/a/span[1]')
 time.sleep(0.3)
 
 # Scrape the alternatives
