@@ -5,6 +5,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import StaleElementReferenceException
+from selenium.common.exceptions import ElementClickInterceptedException
 import time
 import pandas as pd
 from datetime import datetime
@@ -16,22 +18,20 @@ from webdriver_manager.chrome import ChromeDriverManager
 #################################################################
 
 # Define a safe click that waits until the element is visible and scrolls to it
-def safe_click(driver, xpath, timeout=5):
-    # Wait until the element is present in the DOM
-    element = WebDriverWait(driver, timeout).until(
-        EC.presence_of_element_located((By.XPATH, xpath))
-    )
-
-    # Scroll it into view
-    driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", element)
-
-    # Wait until it is actually clickable
-    element = WebDriverWait(driver, timeout).until(
-        EC.element_to_be_clickable((By.XPATH, xpath))
-    )
-
-    # Click
-    element.click()
+def safe_click(driver, xpath, timeout=10):
+    try:
+        element = WebDriverWait(driver, timeout).until(
+            EC.element_to_be_clickable((By.XPATH, xpath))
+        )
+        driver.execute_script(
+            "arguments[0].scrollIntoView({block:'center'});", element
+        )
+        try:
+            element.click()
+        except (ElementClickInterceptedException, StaleElementReferenceException):
+            driver.execute_script("arguments[0].click();", element)
+    except TimeoutException:
+        raise TimeoutException(f"Timed out waiting for clickable element: {xpath}")
 
 
 # Function to safely get text from an element
@@ -40,11 +40,9 @@ def safe_get_text(driver, xpath, timeout=5):
         element = WebDriverWait(driver, timeout).until(
             EC.presence_of_element_located((By.XPATH, xpath))
         )
-        driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", element)
         return element.text.strip()
-    except:
+    except TimeoutException:
         return ""
-
 
 
 # Function to scrape data from a specific alternative
@@ -221,120 +219,57 @@ def open_page():
 
 
 # Function to scrape all alternatives
-def scrape_all_alternatives(start_n_alternative=1, scrape_function=scrape_alternative_dynamic_variable):
-
-    global scraped_data
-    global driver
+def scrape_all_alternatives(driver, scrape_fn, start_n=1):
+    scraped = []
+    show_all_clicked = False
 
     try:
-        # Try to get the number of alternatives
-        n_alternatives_text = WebDriverWait(driver, 5).until(
-            EC.presence_of_element_located((By.XPATH, 
-                '//*[@id="svid12_330e0006183eeab50d8c0b"]/div[2]/div/div[2]/div[2]/div[1]/div/p/strong'
-            ))
+        n_text = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located(
+                (By.XPATH,
+                 '//*[@id="svid12_330e0006183eeab50d8c0b"]/div[2]/div/div[2]/div[2]/div[1]/div/p/strong')
+            )
         ).text.strip()
 
-        if not n_alternatives_text.isdigit():
-            print("⚠️ No alternatives found today, skipping scraping.")
-            return
+        if not n_text.isdigit():
+            return scraped
 
-        n_alternatives = int(n_alternatives_text)
+        n_alternatives = int(n_text)
 
     except TimeoutException:
-        print("⚠️ Alternatives element not found, skipping scraping.")
-        return
-    except Exception as e:
-        print(f"❌ Unexpected error while checking alternatives: {e}")
-        return
+        return scraped
 
-    # Number of alternatives visible before clicking "Show All"
-    n_before_show_all = 9
-
-    for i in range(start_n_alternative, n_alternatives + 1):
-        print(f"Scraping alternative {i} of {n_alternatives}")
-
-        # Click "Show All" if needed
-        if i >= n_before_show_all + 1:
+    for i in range(start_n, n_alternatives + 1):
+        if i > 9 and not show_all_clicked:
             try:
-                show_all_xpath = ('//*[@id="svid12_330e0006183eeab50d8c0b"]/div[2]/div/div[2]/div[2]/div[2]/div[10]/div/button')
-                # Scroll to bottom to force lazy-load
-                driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-                time.sleep(0.3)  # Allow new items to load
-
-                # Wait for the button to appear in DOM
-                WebDriverWait(driver, 5).until(
-                    EC.presence_of_element_located((By.XPATH, show_all_xpath))
-                )
-
-                show_all_xpath = (
+                safe_click(
+                    driver,
                     '//*[@id="svid12_330e0006183eeab50d8c0b"]/div[2]/div/div[2]/div[2]/div[2]/div[10]/div/button'
                 )
-                safe_click(driver, show_all_xpath)
-                time.sleep(0.5)
-            except Exception as e:
-                print("❌ Could not click 'Show All' button:", e)
-                continue
+                show_all_clicked = True
+            except Exception:
+                pass
 
-
-        # Click "Show All" only once
-        #if i >= n_before_show_all + 1 and not show_all_clicked:
-        #    try:
-        #        show_all_xpath = (
-        #            '//*[@id="svid12_330e0006183eeab50d8c0b"]/div[2]/div/div[2]/div[2]/div[2]/div[10]/div/button'
-        #        )
-       # 
-       #         # Scroll to bottom to force lazy-load
-       #         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-       #         time.sleep(0.5)
-       # 
-       #         # Wait for the button to appear in DOM
-       #         WebDriverWait(driver, 5).until(
-       #             EC.presence_of_element_located((By.XPATH, show_all_xpath))
-       #         )
-
-       #         show_all_xpath = (
-       #             '//*[@id="svid12_330e0006183eeab50d8c0b"]/div[2]/div/div[2]/div[2]/div[2]/div[10]/div/button'
-       #         )
-       #         safe_click(driver, show_all_xpath)
-       #         time.sleep(0.5)
-       #         show_all_clicked = True
-       #     except Exception as e:
-       #         print("❌ Could not click 'Show All' button:", e)
-       #         show_all_clicked = True  # Prevent repeated failures
-
-
-        # Try primary XPath for the alternative
-        xpath_primary = (
+        primary = (
             f'//*[@id="svid12_330e0006183eeab50d8c0b"]/div[2]/div/div[2]/div[2]/div[2]/div[{i}]/div/div[5]/div[3]/a'
+        )
+        fallback = (
+            f'//*[@id="svid12_330e0006183eeab50d8c0b"]/div[2]/div/div[2]/div[2]/div[2]/div[{i}]/div/div[5]/div[2]/a'
         )
 
         try:
-            safe_click(driver, xpath_primary)
+            safe_click(driver, primary)
         except Exception:
-            print(f"⚠️ Primary XPath failed for alternative {i}, trying fallback")
-
-            # Try fallback XPath
-            xpath_fallback = (
-                f'//*[@id="svid12_330e0006183eeab50d8c0b"]/div[2]/div/div[2]/div[2]/div[2]/div[{i}]/div/div[5]/div[2]/a'
-            )
-
             try:
-                safe_click(driver, xpath_fallback)
+                safe_click(driver, fallback)
             except Exception:
-                print(f"❌ Both XPaths failed for alternative {i}, skipping")
                 continue
 
-        # Wait briefly for the page to load
-        time.sleep(0.3)
-
-        # Scrape data
-        scraped_data_i = scrape_function()
-        if scraped_data_i:
-            scraped_data.append(scraped_data_i)
-
-        # Return to the list
+        WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "h1")))
+        scraped.append(scrape_fn(driver))
         driver.back()
-        time.sleep(0.3)
+
+    return scraped
 
 
 # Function for pressing the button to select all contract types
