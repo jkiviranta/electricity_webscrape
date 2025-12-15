@@ -8,6 +8,7 @@ from selenium.common.exceptions import TimeoutException
 import time
 import pandas as pd
 from datetime import datetime
+from webdriver_manager.chrome import ChromeDriverManager
 
 
 #################################################################
@@ -134,18 +135,23 @@ def open_page():
     
     global driver
 
-    # Set up Chrome options
-    options = Options()
+    # Set up the Chrome WebDriver using WebDriver Manager for automatic driver management
+    driver_path = ChromeDriverManager().install()
+    service = Service(driver_path)
+    options = webdriver.ChromeOptions()
+    
+    # If you need to run headless (without opening a window), use this:
+    options.add_argument("--headless")
+    options.add_argument("--disable-gpu")
     options.add_argument("--start-maximized")
     options.add_experimental_option("excludeSwitches", ["enable-logging"])
-
-    # Set up the Chrome WebDriver
-    service = Service(executable_path="chromedriver.exe")
-    driver = webdriver.Chrome(service=service, options=options)
+    
+    # Initialize the driver with specified options
+    driver = webdriver.Chrome(service=service, options=options)    
 
     # Open the target URL
     driver.get("https://elpriskollen.se/")
-    time.sleep(2)
+    time.sleep(0.3)
 
     # Don't approve cookies
     WebDriverWait(driver, 5).until(
@@ -228,9 +234,9 @@ def scrape_all_alternatives(start_n_alternative=1, scrape_function=scrape_altern
                     EC.element_to_be_clickable((By.XPATH, '//*[@id="svid12_330e0006183eeab50d8c0b"]/div[2]/div/div[2]/div[2]/div[2]/div[10]/div/button'))
                 )
                 driver.execute_script("arguments[0].scrollIntoView(true);", show_all_button)
-                time.sleep(1)
+                time.sleep(0.3)
                 show_all_button.click()
-                time.sleep(1)  # Wait for the additional alternatives to load
+                time.sleep(0.3)  # Wait for the additional alternatives to load
             except Exception as e:
                 print("❌ Could not click 'Show All' button:", e)
                 continue
@@ -256,11 +262,11 @@ def scrape_all_alternatives(start_n_alternative=1, scrape_function=scrape_altern
 
         # Scroll and click the found element
         driver.execute_script("arguments[0].scrollIntoView(true);", element)
-        time.sleep(1)  # Let any animations finish
+        time.sleep(0.3)  # Let any animations finish
         element.click()
 
         # Wait for the page to load
-        time.sleep(1)
+        time.sleep(0.3)
 
         # Scrape data from the alternative
         scraped_data_i = scrape_function()
@@ -279,7 +285,7 @@ def select_all_contract_types():
         EC.element_to_be_clickable((By.XPATH, '//*[@id="svid12_330e0006183eeab50d8c0b"]/div[2]/div/div[2]/div[1]/div[2]/a/span[1]'))
     )
     driver.execute_script("arguments[0].scrollIntoView(true);", element)
-    time.sleep(1)  # Let any animations finish
+    time.sleep(0.3)  # Let any animations finish
     element.click()
 
 
@@ -320,9 +326,9 @@ element = WebDriverWait(driver, 10).until(
     EC.element_to_be_clickable((By.XPATH, '//*[@id="AvtalMedTimpris"]/div/a/span[1]'))
 )
 driver.execute_script("arguments[0].scrollIntoView(true);", element)
-time.sleep(1)  # Let any animations finish
+time.sleep(0.3)  # Let any animations finish
 element.click()
-time.sleep(1)
+time.sleep(0.3)
 
 # Scrape the alternatives
 scrape_all_alternatives(start_n_alternative=1, scrape_function=scrape_alternative_dynamic_variable)
@@ -340,9 +346,9 @@ element = WebDriverWait(driver, 10).until(
     EC.element_to_be_clickable((By.XPATH, '//*[@id="RorligaAvtal"]/div/a/span[1]'))
 )
 driver.execute_script("arguments[0].scrollIntoView(true);", element)
-time.sleep(1)  # Let any animations finish
+time.sleep(0.3)  # Let any animations finish
 element.click()
-time.sleep(1)
+time.sleep(0.3)
 
 # Scrape the alternatives
 scrape_all_alternatives(start_n_alternative=1, scrape_function=scrape_alternative_dynamic_variable)
@@ -360,9 +366,9 @@ element = WebDriverWait(driver, 10).until(
     EC.element_to_be_clickable((By.XPATH, '//*[@id="Mixavtal"]/div/a/span[1]'))
 )
 driver.execute_script("arguments[0].scrollIntoView(true);", element)
-time.sleep(1)  # Let any animations finish
+time.sleep(0.3)  # Let any animations finish
 element.click()
-time.sleep(1)
+time.sleep(0.3)
 
 # Scrape the alternatives
 scrape_all_alternatives(start_n_alternative=1, scrape_function=scrape_alternative_mixed)
@@ -380,9 +386,9 @@ element = WebDriverWait(driver, 10).until(
     EC.element_to_be_clickable((By.XPATH, '//*[@id="FastaAvtal"]/div[1]/a/span[1]'))
 )
 driver.execute_script("arguments[0].scrollIntoView(true);", element)
-time.sleep(1)  # Let any animations finish
+time.sleep(0.3)  # Let any animations finish
 element.click()
-time.sleep(1)
+time.sleep(0.3)
 
 # Scrape the alternatives
 scrape_all_alternatives(start_n_alternative=1, scrape_function=scrape_alternative_fixed)
@@ -400,9 +406,9 @@ element = WebDriverWait(driver, 10).until(
     EC.element_to_be_clickable((By.XPATH, '//*[@id="FastaAvtal"]/div[2]/a/span[1]'))
 )
 driver.execute_script("arguments[0].scrollIntoView(true);", element)
-time.sleep(1)  # Let any animations finish
+time.sleep(0.3)  # Let any animations finish
 element.click()
-time.sleep(1)
+time.sleep(0.3)
 
 # Scrape the alternatives
 scrape_all_alternatives(start_n_alternative=1, scrape_function=scrape_alternative_fixed)
@@ -420,9 +426,9 @@ element = WebDriverWait(driver, 10).until(
     EC.element_to_be_clickable((By.XPATH, '//*[@id="FastaAvtal"]/div[3]/a/span[1]'))
 )
 driver.execute_script("arguments[0].scrollIntoView(true);", element)
-time.sleep(1)  # Let any animations finish
+time.sleep(0.3)  # Let any animations finish
 element.click()
-time.sleep(1)
+time.sleep(0.3)
 
 # Scrape the alternatives
 scrape_all_alternatives(start_n_alternative=1, scrape_function=scrape_alternative_fixed)
@@ -440,9 +446,9 @@ element = WebDriverWait(driver, 10).until(
     EC.element_to_be_clickable((By.XPATH, '//*[@id="FastaAvtal"]/div[4]/a/span[1]'))
 )
 driver.execute_script("arguments[0].scrollIntoView(true);", element)
-time.sleep(1)  # Let any animations finish
+time.sleep(0.3)  # Let any animations finish
 element.click()
-time.sleep(1)
+time.sleep(0.3)
 
 # Scrape the alternatives
 scrape_all_alternatives(start_n_alternative=1, scrape_function=scrape_alternative_fixed)
@@ -460,9 +466,9 @@ element = WebDriverWait(driver, 10).until(
     EC.element_to_be_clickable((By.XPATH, '//*[@id="FastaAvtal"]/div[5]/a/span[1]'))
 )
 driver.execute_script("arguments[0].scrollIntoView(true);", element)
-time.sleep(1)  # Let any animations finish
+time.sleep(0.3)  # Let any animations finish
 element.click()
-time.sleep(1)
+time.sleep(0.3)
 
 # Scrape the alternatives
 scrape_all_alternatives(start_n_alternative=1, scrape_function=scrape_alternative_fixed)
@@ -480,9 +486,9 @@ element = WebDriverWait(driver, 10).until(
     EC.element_to_be_clickable((By.XPATH, '//*[@id="FastaAvtal"]/div[6]/a/span[1]'))
 )
 driver.execute_script("arguments[0].scrollIntoView(true);", element)
-time.sleep(1)  # Let any animations finish
+time.sleep(0.3)  # Let any animations finish
 element.click()
-time.sleep(1)
+time.sleep(0.3)
 
 # Scrape the alternatives
 scrape_all_alternatives(start_n_alternative=1, scrape_function=scrape_alternative_fixed)
