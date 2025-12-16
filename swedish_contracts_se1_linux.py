@@ -504,6 +504,11 @@ scrape_all_alternatives(start_n_alternative=1, scrape_function=scrape_alternativ
 scraped_data_fixed_5years = scraped_data.copy()
 scraped_data.clear()
 
+
+# Close the driver
+driver.quit()
+
+
 # Add the contract type as a new key in each dictionary and combine all data into the main list
 for data in scraped_data_quarterly:
     data['contract_type'] = 'quarterly_price'
@@ -546,7 +551,7 @@ df['date'] = current_date
 df['bidding_zone'] = 'SE1'
 
 
-# Save to folder "sweedish_contracts"
+# Save to folder "swedish_contracts"
 output_folder = "swedish_contracts"
 file_name_w_date = f"scraped_data_se1_{current_date}.csv"
 output_file_path = f"{output_folder}/{file_name_w_date}"
