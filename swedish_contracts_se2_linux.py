@@ -504,6 +504,11 @@ scrape_all_alternatives(start_n_alternative=1, scrape_function=scrape_alternativ
 scraped_data_fixed_5years = scraped_data.copy()
 scraped_data.clear()
 
+
+# Close the driver
+driver.quit()
+
+
 # Add the contract type as a new key in each dictionary and combine all data into the main list
 for data in scraped_data_quarterly:
     data['contract_type'] = 'quarterly_price'
