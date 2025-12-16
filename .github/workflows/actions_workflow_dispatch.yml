@@ -13,6 +13,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Set up Git user
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Setup python
         uses: actions/setup-python@v4
         with:
@@ -25,11 +30,6 @@ jobs:
           
       - name: Execute contract scrape
         run: python contracts_linux.py
-
-      - name: Set up Git user
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
 
       - name: Commit and push changes
         run: |
