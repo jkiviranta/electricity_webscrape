@@ -178,6 +178,7 @@ def open_page():
 
     # Reject cookies
     safe_click(driver, '/html/body/div[2]/div/section/footer/form[2]/button')
+    time.sleep(1)
 
     # Postal code
     WebDriverWait(driver, 10).until(
@@ -503,6 +504,11 @@ scrape_all_alternatives(start_n_alternative=1, scrape_function=scrape_alternativ
 # Save the data temporarily and clear the main list
 scraped_data_fixed_5years = scraped_data.copy()
 scraped_data.clear()
+
+
+# Close the driver
+driver.quit()
+
 
 # Add the contract type as a new key in each dictionary and combine all data into the main list
 for data in scraped_data_quarterly:
