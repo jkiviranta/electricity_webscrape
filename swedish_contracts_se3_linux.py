@@ -177,7 +177,7 @@ def open_page():
     time.sleep(2)
 
     # Reject cookies
-    safe_click(driver, '/html/body/div[2]/div/section/footer/form[2]/button')
+    safe_click(driver, '/html/body/div/div/div[2]/div[2]/div[2]/div[2]/dialog/div[2]/form[2]/button')
     time.sleep(1)
 
     # Postal code
