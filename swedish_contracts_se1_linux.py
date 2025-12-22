@@ -12,6 +12,7 @@ from selenium.common.exceptions import (
 import time
 import pandas as pd
 from datetime import datetime
+from webdriver_manager.chrome import ChromeDriverManager
 
 
 #################################################################
