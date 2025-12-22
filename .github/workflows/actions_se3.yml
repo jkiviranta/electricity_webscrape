@@ -1,9 +1,9 @@
 name: Run web scraper
 
-#on: 
-#  schedule:
-#    - cron: '30 5 * * *' # Run the workflow every day at 5:30 UTC
-on: [workflow_dispatch]
+on: 
+  schedule:
+    - cron: '30 13 * * *' # Run the workflow every day at 13:30 UTC
+#on: [workflow_dispatch]
 
 jobs:
   build:
