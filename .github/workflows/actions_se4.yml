@@ -2,7 +2,7 @@ name: Run web scraper
 
 on: 
   schedule:
-    - cron: '30 15 * * *' # Run the workflow every day at 15:30 UTC
+    - cron: '30 15 * * 6,0' # Run the workflow every Satuday and Sunday at 15:30 UTC
 #on: [workflow_dispatch]
 
 jobs:
