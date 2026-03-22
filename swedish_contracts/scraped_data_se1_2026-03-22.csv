@@ -1,0 +1,396 @@
+contract_name,retailer_name,fixed_price_element_ore_kwh,unit_price_ore_kwh,wholesale_price_monthly_avg_ore_kwh,markup_ore_kwh,variable_costs_ore_kwh,vat_ore_kwh,total_ore_kwh,energy_source,contract_type,date,bidding_zone
+Rörligt kvartspris elområde 1,Eksjö Energi ELIT AB,7.50 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,3.94 öre/kWh,28.27 öre/kWh,141.36 öre/kWh,Sol_Vind_Vatten_Biobränsle,quarterly_price,2026-03-22,SE1
+Rörligt spotpris 100% förnybar energi,Karlstads Energi AB,11.52 öre/kWh,0,98.75 öre/kWh,2.00 öre/kWh,2.87 öre/kWh,28.79 öre/kWh,143.93 öre/kWh,Vind_Vatten_Biobränsle,quarterly_price,2026-03-22,SE1
+Rörligt Kvartspris,Tranås Energi AB,10.56 öre/kWh,0,98.75 öre/kWh,1.70 öre/kWh,4.40 öre/kWh,28.85 öre/kWh,144.26 öre/kWh,Sol_Vind_Vatten_Biobränsle,quarterly_price,2026-03-22,SE1
+Rörligt pris Kvart - Fossilfri energi - Elområde 1,Ale El Elhandel AB,12.00 öre/kWh,0,98.75 öre/kWh,2.70 öre/kWh,4.40 öre/kWh,29.46 öre/kWh,147.31 öre/kWh,Sol_Vind_Vatten_Kärnkraft,quarterly_price,2026-03-22,SE1
+Kvartspris för elområde 1,Luleå Energi AB,14.40 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,2.79 öre/kWh,29.71 öre/kWh,148.55 öre/kWh,Vatten_Kärnkraft,quarterly_price,2026-03-22,SE1
+"Kvartspris, 100 % förnybar energi, ingen fast avgift",Sala-Heby Energi AB,0.00 öre/kWh,0,98.75 öre/kWh,7.50 öre/kWh,12.64 öre/kWh,29.72 öre/kWh,148.61 öre/kWh,Sol_Vind_Vatten_Biobränsle,quarterly_price,2026-03-22,SE1
+Kvartspris utan bindningstid - Bra Miljöval,GodEl,18.72 öre/kWh,0,98.75 öre/kWh,0.00 öre/kWh,2.32 öre/kWh,29.95 öre/kWh,149.74 öre/kWh,Sol_Vind_Vatten_Bra miljöval,quarterly_price,2026-03-22,SE1
+Dynamiskt Pris Fossilfritt,Varberg Energimarknad AB,14.60 öre/kWh,0,98.75 öre/kWh,3.80 öre/kWh,3.88 öre/kWh,30.26 öre/kWh,151.29 öre/kWh,Kärnkraft,quarterly_price,2026-03-22,SE1
+Dynamiskt Pris Förnybart,Varberg Energimarknad AB,14.60 öre/kWh,0,98.75 öre/kWh,3.80 öre/kWh,4.58 öre/kWh,30.43 öre/kWh,152.16 öre/kWh,Sol_Vind_Vatten_Biobränsle,quarterly_price,2026-03-22,SE1
+Kvartspris VattenEl för elområde 1,Luleå Energi AB,14.40 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,5.79 öre/kWh,30.46 öre/kWh,152.30 öre/kWh,Vatten,quarterly_price,2026-03-22,SE1
+Kvartspris VindEl för elområde 1,Luleå Energi AB,14.40 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,5.79 öre/kWh,30.46 öre/kWh,152.30 öre/kWh,Vind,quarterly_price,2026-03-22,SE1
+Kvartspris återvunnen el,Bodens Energi AB,16.80 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,3.40 öre/kWh,30.46 öre/kWh,152.31 öre/kWh,Fossilt,quarterly_price,2026-03-22,SE1
+Kvartspris förnybar el,Bodens Energi AB,16.80 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,4.00 öre/kWh,30.61 öre/kWh,153.06 öre/kWh,Sol_Vind_Vatten_Biobränsle,quarterly_price,2026-03-22,SE1
+"Rörligt Kvatspris, Elområde 1",Härryda Energi Elhandel AB,16.80 öre/kWh,0,98.75 öre/kWh,3.90 öre/kWh,3.36 öre/kWh,30.70 öre/kWh,153.51 öre/kWh,Kärnkraft,quarterly_price,2026-03-22,SE1
+Rörligt kvartspris elområde 1 Bra miljöval,Eksjö Energi ELIT AB,7.50 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,13.94 öre/kWh,30.77 öre/kWh,153.86 öre/kWh,Sol_Vind_Vatten_Biobränsle_Bra miljöval,quarterly_price,2026-03-22,SE1
+Kvartspris Bra Miljöval för elområde 1,Luleå Energi AB,14.40 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,7.29 öre/kWh,30.84 öre/kWh,154.18 öre/kWh,Vind_Vatten_Bra miljöval,quarterly_price,2026-03-22,SE1
+Kvartspris Rörlig Elområde 1 - Minipris,Elnor Elhandel AB,18.72 öre/kWh,0,98.75 öre/kWh,0.00 öre/kWh,5.91 öre/kWh,30.84 öre/kWh,154.22 öre/kWh,Sol_Vind_Vatten_Biobränsle_Kärnkraft,quarterly_price,2026-03-22,SE1
+Kvartspris SE1,Jönköping Energi AB,19.20 öre/kWh,0,98.75 öre/kWh,2.80 öre/kWh,3.36 öre/kWh,31.03 öre/kWh,155.14 öre/kWh,Vind_Vatten_Biobränsle,quarterly_price,2026-03-22,SE1
+"Bondens El, Rörligt kvartspris",Bondens El - LRF Samköp AB,18.00 öre/kWh,0,98.75 öre/kWh,3.20 öre/kWh,4.17 öre/kWh,31.03 öre/kWh,155.15 öre/kWh,Sol_Vind_Vatten_Biobränsle,quarterly_price,2026-03-22,SE1
+"Gävle Energi Elhandel Kvartspris Elområde 1, Fossilfri el",Gävle Energisystem AB,18.72 öre/kWh,0,98.75 öre/kWh,3.92 öre/kWh,2.84 öre/kWh,31.06 öre/kWh,155.29 öre/kWh,Sol_Vind_Vatten_Biobränsle_Kärnkraft,quarterly_price,2026-03-22,SE1
+"Söderhamn Nära Elhandel Kvartspris Elområde 1, Fossilfri el",Gävle Energisystem AB,18.72 öre/kWh,0,98.75 öre/kWh,3.92 öre/kWh,2.84 öre/kWh,31.06 öre/kWh,155.29 öre/kWh,Sol_Vind_Vatten_Biobränsle_Kärnkraft,quarterly_price,2026-03-22,SE1
+"Gävle Energi Elhandel Kvartspris Elområde 1, Förnybar el",Gävle Energisystem AB,18.72 öre/kWh,0,98.75 öre/kWh,3.92 öre/kWh,3.64 öre/kWh,31.26 öre/kWh,156.29 öre/kWh,Sol_Vind_Vatten_Biobränsle,quarterly_price,2026-03-22,SE1
+"Söderhamn Nära Elhandel Kvartspris Elområde 1, Förnybar el",Gävle Energisystem AB,18.72 öre/kWh,0,98.75 öre/kWh,3.92 öre/kWh,3.64 öre/kWh,31.26 öre/kWh,156.29 öre/kWh,Sol_Vind_Vatten_Biobränsle,quarterly_price,2026-03-22,SE1
+Kvartspris 100% förnybart,Sollentuna Elhandel AB,19.20 öre/kWh,0,98.75 öre/kWh,3.60 öre/kWh,3.49 öre/kWh,31.26 öre/kWh,156.30 öre/kWh,Sol_Vind_Vatten,quarterly_price,2026-03-22,SE1
+100% kärnkraft till kvartspris,Kärnfull Energi,18.70 öre/kWh,0,98.75 öre/kWh,3.20 öre/kWh,5.19 öre/kWh,31.46 öre/kWh,157.30 öre/kWh,Kärnkraft,quarterly_price,2026-03-22,SE1
+Kvartspris löpande,Affärsverken Energi Karlskrona AB,19.20 öre/kWh,0,98.75 öre/kWh,2.40 öre/kWh,7.20 öre/kWh,31.89 öre/kWh,159.44 öre/kWh,Sol_Vind_Vatten_Biobränsle,quarterly_price,2026-03-22,SE1
+Rörligt kvartspris,BestEl,16.80 öre/kWh,0,98.75 öre/kWh,5.00 öre/kWh,7.08 öre/kWh,31.91 öre/kWh,159.54 öre/kWh,Sol_Vind_Vatten_Kärnkraft,quarterly_price,2026-03-22,SE1
+Fossilfritt - Rörligt Kvartpris,Falkenberg Energi AB,21.60 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,4.64 öre/kWh,31.97 öre/kWh,159.86 öre/kWh,Kärnkraft,quarterly_price,2026-03-22,SE1
+Kvartspris - Rörligt pris med 100% fossilfri el - SN1,Öresundskraft,21.60 öre/kWh,0,98.75 öre/kWh,2.55 öre/kWh,5.05 öre/kWh,31.99 öre/kWh,159.94 öre/kWh,Sol_Vind_Vatten_Biobränsle_Kärnkraft,quarterly_price,2026-03-22,SE1
+Kvartspris Tillsvidare Fossilfri El Elområde 1,E.ON,19.20 öre/kWh,0,98.75 öre/kWh,6.00 öre/kWh,4.72 öre/kWh,32.17 öre/kWh,160.84 öre/kWh,Kärnkraft,quarterly_price,2026-03-22,SE1
+Bra Miljöval - Rörligt Kvartpris,Falkenberg Energi AB,21.60 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,5.64 öre/kWh,32.22 öre/kWh,161.11 öre/kWh,Sol_Vind_Vatten_Bra miljöval,quarterly_price,2026-03-22,SE1
+Rörligt Kvartavtal,PiteEnergi Handel AB,21.60 öre/kWh,0,98.75 öre/kWh,3.90 öre/kWh,5.60 öre/kWh,32.46 öre/kWh,162.31 öre/kWh,Sol_Vatten,quarterly_price,2026-03-22,SE1
+Rörligt kvartspris,Mölndal Energi AB,23.52 öre/kWh,0,98.75 öre/kWh,2.00 öre/kWh,5.76 öre/kWh,32.51 öre/kWh,162.54 öre/kWh,Sol_Vind_Vatten_Biobränsle_Kärnkraft,quarterly_price,2026-03-22,SE1
+Kvartspris - Rörligt pris med Bra Miljöval - SN1,Öresundskraft,21.60 öre/kWh,0,98.75 öre/kWh,2.55 öre/kWh,7.60 öre/kWh,32.63 öre/kWh,163.13 öre/kWh,Sol_Vind_Vatten_Biobränsle_Bra miljöval,quarterly_price,2026-03-22,SE1
+Rörligt Kvartspris,Umeå Energi Elhandel AB,23.52 öre/kWh,0,98.75 öre/kWh,4.75 öre/kWh,3.62 öre/kWh,32.66 öre/kWh,163.30 öre/kWh,Sol_Vind_Vatten_Biobränsle_Kärnkraft,quarterly_price,2026-03-22,SE1
+Kvartspris Fossilfri Elmix SN1,Mälarenergi AB,23.52 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,5.62 öre/kWh,32.70 öre/kWh,163.49 öre/kWh,Sol_Vind_Vatten_Kärnkraft,quarterly_price,2026-03-22,SE1
+"Dynamiskt Spotpris, fossilfri el för elområde 1",Göteborg Energi AB,21.60 öre/kWh,0,98.75 öre/kWh,6.90 öre/kWh,3.85 öre/kWh,32.77 öre/kWh,163.88 öre/kWh,Kärnkraft,quarterly_price,2026-03-22,SE1
+Kvartspris El SE1,Kalmar Energi Försäljning AB,24.00 öre/kWh,0,98.75 öre/kWh,4.00 öre/kWh,4.55 öre/kWh,32.83 öre/kWh,164.13 öre/kWh,Sol_Vind_Vatten_Biobränsle,quarterly_price,2026-03-22,SE1
+Bixia Kvartspris elområde 1,Bixia AB,28.32 öre/kWh,0,98.75 öre/kWh,0.00 öre/kWh,4.33 öre/kWh,32.85 öre/kWh,164.25 öre/kWh,Sol_Vind_Vatten_Biobränsle,quarterly_price,2026-03-22,SE1
+Kvartspris Vindkraft SN1,Mälarenergi AB,23.52 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,6.32 öre/kWh,32.87 öre/kWh,164.36 öre/kWh,Vind,quarterly_price,2026-03-22,SE1
+Kvartspris Vattenkraft SN1,Mälarenergi AB,23.52 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,6.32 öre/kWh,32.87 öre/kWh,164.36 öre/kWh,Vatten,quarterly_price,2026-03-22,SE1
+Kvartspris Solkraft SN1,Mälarenergi AB,23.52 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,6.32 öre/kWh,32.87 öre/kWh,164.36 öre/kWh,Sol,quarterly_price,2026-03-22,SE1
+Kvartsprisavtal löpande SE1,Tibber AB,23.52 öre/kWh,0,98.75 öre/kWh,6.00 öre/kWh,3.28 öre/kWh,32.89 öre/kWh,164.44 öre/kWh,Sol_Vind_Vatten_Kärnkraft,quarterly_price,2026-03-22,SE1
+Rörligt Kvartspris 100 % förnybart,Umeå Energi Elhandel AB,23.52 öre/kWh,0,98.75 öre/kWh,4.75 öre/kWh,4.62 öre/kWh,32.91 öre/kWh,164.55 öre/kWh,Sol_Vind_Vatten_Biobränsle,quarterly_price,2026-03-22,SE1
+Kvartspris Elområde 1,Gotlands Elförsäljning AB,21.60 öre/kWh,0,98.75 öre/kWh,6.00 öre/kWh,5.76 öre/kWh,33.03 öre/kWh,165.14 öre/kWh,Sol_Vind_Vatten_Kärnkraft,quarterly_price,2026-03-22,SE1
+Rörligt kvartspris löpande för elområde 1,Jämtkraft AB,24.00 öre/kWh,0,98.75 öre/kWh,5.00 öre/kWh,4.66 öre/kWh,33.10 öre/kWh,165.51 öre/kWh,Sol_Vind_Vatten_Biobränsle,quarterly_price,2026-03-22,SE1
+Rörligt kvartspris löpande för elområde 1 - Vindkraft,Jämtkraft AB,24.00 öre/kWh,0,98.75 öre/kWh,5.00 öre/kWh,4.66 öre/kWh,33.10 öre/kWh,165.51 öre/kWh,Vind,quarterly_price,2026-03-22,SE1
+Rörligt kvartspris löpande för elområde 1 - Bra miljöval,Jämtkraft AB,24.00 öre/kWh,0,98.75 öre/kWh,5.00 öre/kWh,5.06 öre/kWh,33.20 öre/kWh,166.01 öre/kWh,Sol_Vind_Vatten_Biobränsle_Bra miljöval,quarterly_price,2026-03-22,SE1
+Fossilfritt avtal - Kvartspris med Kärnkraft,Vattenfall AB,21.60 öre/kWh,0,98.75 öre/kWh,8.40 öre/kWh,4.13 öre/kWh,33.22 öre/kWh,166.10 öre/kWh,Kärnkraft,quarterly_price,2026-03-22,SE1
+Fossilfritt avtal - Kvartspris,Vattenfall AB,21.60 öre/kWh,0,98.75 öre/kWh,8.40 öre/kWh,4.13 öre/kWh,33.22 öre/kWh,166.10 öre/kWh,Vatten_Kärnkraft,quarterly_price,2026-03-22,SE1
+Mitt Kvartspris elområde 1,Halmstads Energi och Miljö AB,28.80 öre/kWh,0,98.75 öre/kWh,0.00 öre/kWh,5.49 öre/kWh,33.26 öre/kWh,166.30 öre/kWh,Sol_Vind_Vatten_Biobränsle,quarterly_price,2026-03-22,SE1
+"Dynamiskt Spotpris, el från solkraft för elområde 1",Göteborg Energi AB,21.60 öre/kWh,0,98.75 öre/kWh,6.90 öre/kWh,6.75 öre/kWh,33.50 öre/kWh,167.50 öre/kWh,Sol,quarterly_price,2026-03-22,SE1
+"Dynamiskt Spotpris, el från vindkraft för elområde 1",Göteborg Energi AB,21.60 öre/kWh,0,98.75 öre/kWh,6.90 öre/kWh,6.75 öre/kWh,33.50 öre/kWh,167.50 öre/kWh,Vind,quarterly_price,2026-03-22,SE1
+Rörligt kvartspris Fossilfri El Elområde 1,Kraftringen Energi AB,28.32 öre/kWh,0,98.75 öre/kWh,3.90 öre/kWh,3.18 öre/kWh,33.54 öre/kWh,167.69 öre/kWh,Kärnkraft,quarterly_price,2026-03-22,SE1
+Rörligt Inköpspirs,Forward Energy AB,28.32 öre/kWh,0,98.75 öre/kWh,0.00 öre/kWh,7.30 öre/kWh,33.59 öre/kWh,167.96 öre/kWh,Kärnkraft,quarterly_price,2026-03-22,SE1
+Kvartspris Vatten Elområde 1,Gotlands Elförsäljning AB,21.60 öre/kWh,0,98.75 öre/kWh,9.00 öre/kWh,5.76 öre/kWh,33.78 öre/kWh,168.89 öre/kWh,Vatten,quarterly_price,2026-03-22,SE1
+Kvartspris Vind Elområde 1,Gotlands Elförsäljning AB,21.60 öre/kWh,0,98.75 öre/kWh,9.00 öre/kWh,5.76 öre/kWh,33.78 öre/kWh,168.89 öre/kWh,Vind,quarterly_price,2026-03-22,SE1
+Kvartspris Tillsvidare Förnybar El Elområde 1,E.ON,26.40 öre/kWh,0,98.75 öre/kWh,6.00 öre/kWh,4.72 öre/kWh,33.97 öre/kWh,169.84 öre/kWh,Sol_Vind_Vatten_Biobränsle,quarterly_price,2026-03-22,SE1
+Fossilfritt avtal - Kvartspris med Vind- eller Vattenkraft,Vattenfall AB,21.60 öre/kWh,0,98.75 öre/kWh,12.40 öre/kWh,4.13 öre/kWh,34.22 öre/kWh,171.10 öre/kWh,Vind_Vatten,quarterly_price,2026-03-22,SE1
+Kvartspris,Fortum,33.12 öre/kWh,0,98.75 öre/kWh,3.90 öre/kWh,1.88 öre/kWh,34.41 öre/kWh,172.06 öre/kWh,Kärnkraft,quarterly_price,2026-03-22,SE1
+Kvartspris Rörlig Elområde 1 - Standardpris,Elnor Elhandel AB,28.32 öre/kWh,0,98.75 öre/kWh,4.80 öre/kWh,5.91 öre/kWh,34.45 öre/kWh,172.22 öre/kWh,Sol_Vind_Vatten_Biobränsle_Kärnkraft,quarterly_price,2026-03-22,SE1
+Fossilfritt avtal - Kvartspris med Solkraft,Vattenfall AB,21.60 öre/kWh,0,98.75 öre/kWh,13.40 öre/kWh,4.13 öre/kWh,34.47 öre/kWh,172.35 öre/kWh,Sol,quarterly_price,2026-03-22,SE1
+Svea Solar elavtal,Svea Solar,33.12 öre/kWh,0,98.75 öre/kWh,3.50 öre/kWh,2.90 öre/kWh,34.57 öre/kWh,172.84 öre/kWh,Sol_Vind_Vatten,quarterly_price,2026-03-22,SE1
+Greenely kvartsavtal,Greenely Premium AB,23.52 öre/kWh,0,98.75 öre/kWh,13.40 öre/kWh,2.82 öre/kWh,34.62 öre/kWh,173.11 öre/kWh,Sol_Vind_Vatten_Biobränsle_Kärnkraft,quarterly_price,2026-03-22,SE1
+ETC Kvartspris SE1,ETC El,23.50 öre/kWh,0,98.75 öre/kWh,0.00 öre/kWh,17.34 öre/kWh,34.90 öre/kWh,174.49 öre/kWh,Sol_Vind_Vatten,quarterly_price,2026-03-22,SE1
+Dynamiskt pris 100% förnybart,Telinet Energi AB,33.12 öre/kWh,0,98.75 öre/kWh,0.00 öre/kWh,12.13 öre/kWh,36.00 öre/kWh,180.00 öre/kWh,Sol_Vind_Vatten_Biobränsle,quarterly_price,2026-03-22,SE1
+ETC Kvartpris med solcellstillägg SE1,ETC El,28.30 öre/kWh,0,98.75 öre/kWh,0.00 öre/kWh,17.34 öre/kWh,36.10 öre/kWh,180.49 öre/kWh,Sol_Vind_Vatten,quarterly_price,2026-03-22,SE1
+Rörligt timpris,SVEKRAFT AB,0.00 öre/kWh,0,98.75 öre/kWh,0.90 öre/kWh,4.00 öre/kWh,25.91 öre/kWh,129.56 öre/kWh,Fossilt,hourly_price,2026-03-22,SE1
+"Rörligt timpris, 100 % Fossilfri el",SVEKRAFT AB,0.00 öre/kWh,0,98.75 öre/kWh,0.90 öre/kWh,4.00 öre/kWh,25.91 öre/kWh,129.56 öre/kWh,Sol_Vind_Vatten_Biobränsle,hourly_price,2026-03-22,SE1
+Rörligt timpris,Motala Energi AB,9.60 öre/kWh,0,98.75 öre/kWh,4.90 öre/kWh,4.00 öre/kWh,29.31 öre/kWh,146.56 öre/kWh,Fossilt,hourly_price,2026-03-22,SE1
+Timprisavtal SE1,Solfolket AB,18.72 öre/kWh,0,98.75 öre/kWh,0.00 öre/kWh,4.29 öre/kWh,30.44 öre/kWh,152.20 öre/kWh,Sol_Vind_Vatten,hourly_price,2026-03-22,SE1
+SE1 Rörligt spot,Storuman Energi AB,18.72 öre/kWh,0,98.75 öre/kWh,3.55 öre/kWh,2.67 öre/kWh,30.92 öre/kWh,154.61 öre/kWh,Fossilt,hourly_price,2026-03-22,SE1
+"Rörligt pris Tim, Elområde 1",Jukkasjärvi Energi AB,18.00 öre/kWh,0,98.75 öre/kWh,4.50 öre/kWh,3.06 öre/kWh,31.08 öre/kWh,155.39 öre/kWh,Kärnkraft,hourly_price,2026-03-22,SE1
+"RÖRLIGT TIMPRIS UTAN BINDNING, 100 % FOSSILFRI EL",STOCKHOLMS ELBOLAG AB,19.20 öre/kWh,0,98.75 öre/kWh,1.90 öre/kWh,9.15 öre/kWh,32.25 öre/kWh,161.25 öre/kWh,Sol_Vind_Vatten_Biobränsle,hourly_price,2026-03-22,SE1
+SE1 Rörligt spot:Vattenkraft,Storuman Energi AB,18.72 öre/kWh,0,98.75 öre/kWh,11.55 öre/kWh,2.67 öre/kWh,32.92 öre/kWh,164.61 öre/kWh,Vatten,hourly_price,2026-03-22,SE1
+SE1 Rörligt spot:Blå El,Storuman Energi AB,18.72 öre/kWh,0,98.75 öre/kWh,11.80 öre/kWh,2.67 öre/kWh,32.98 öre/kWh,164.93 öre/kWh,Vatten,hourly_price,2026-03-22,SE1
+Rörligt pris,SVEKRAFT AB,0.00 öre/kWh,0,98.75 öre/kWh,0.90 öre/kWh,4.00 öre/kWh,25.91 öre/kWh,129.56 öre/kWh,Fossilt,variable_price,2026-03-22,SE1
+"Rörligt pris, 100 % Fossilfri el",SVEKRAFT AB,0.00 öre/kWh,0,98.75 öre/kWh,0.90 öre/kWh,4.00 öre/kWh,25.91 öre/kWh,129.56 öre/kWh,Sol_Vind_Vatten_Biobränsle,variable_price,2026-03-22,SE1
+Rörligt pris elområde 1,Eksjö Energi ELIT AB,7.50 öre/kWh,0,98.75 öre/kWh,2.60 öre/kWh,6.46 öre/kWh,28.83 öre/kWh,144.14 öre/kWh,Sol_Vind_Vatten_Biobränsle,variable_price,2026-03-22,SE1
+Rörligt pris,Motala Energi AB,9.60 öre/kWh,0,98.75 öre/kWh,4.90 öre/kWh,4.00 öre/kWh,29.31 öre/kWh,146.56 öre/kWh,Fossilt,variable_price,2026-03-22,SE1
+Rörligt Pris,Tranås Energi AB,10.56 öre/kWh,0,98.75 öre/kWh,1.70 öre/kWh,6.34 öre/kWh,29.34 öre/kWh,146.69 öre/kWh,Sol_Vind_Vatten_Biobränsle,variable_price,2026-03-22,SE1
+Rörligt pris 100% förnybar energi,Karlstads Energi AB,11.52 öre/kWh,0,98.75 öre/kWh,3.00 öre/kWh,4.87 öre/kWh,29.54 öre/kWh,147.68 öre/kWh,Sol_Vind_Vatten_Biobränsle,variable_price,2026-03-22,SE1
+Rörligt pris - Fossilfri energi - Elområde 1,Ale El Elhandel AB,12.00 öre/kWh,0,98.75 öre/kWh,2.70 öre/kWh,6.60 öre/kWh,30.01 öre/kWh,150.06 öre/kWh,Sol_Vind_Vatten_Kärnkraft,variable_price,2026-03-22,SE1
+Rörligt avtal elområde 1,Gislaved Energi AB,12.00 öre/kWh,0,98.75 öre/kWh,2.50 öre/kWh,6.82 öre/kWh,30.02 öre/kWh,150.09 öre/kWh,Sol_Vind_Vatten_Biobränsle,variable_price,2026-03-22,SE1
+Rörligt elavtal,Sundsvall Energi AB,13.20 öre/kWh,0,98.75 öre/kWh,4.00 öre/kWh,4.57 öre/kWh,30.13 öre/kWh,150.65 öre/kWh,Sol_Vind_Vatten_Biobränsle_Kärnkraft,variable_price,2026-03-22,SE1
+"Rörligt Pris, 100 % förnybar energi, ingen fast avgift",Sala-Heby Energi AB,0.00 öre/kWh,0,98.75 öre/kWh,7.50 öre/kWh,14.55 öre/kWh,30.20 öre/kWh,151.00 öre/kWh,Sol_Vind_Vatten_Biobränsle,variable_price,2026-03-22,SE1
+Rörligt pris för elområde 1,Luleå Energi AB,14.40 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,4.97 öre/kWh,30.25 öre/kWh,151.28 öre/kWh,Vatten_Kärnkraft,variable_price,2026-03-22,SE1
+Rörligt pris utan bindningstid - Bra Miljöval,GodEl,18.72 öre/kWh,0,98.75 öre/kWh,0.00 öre/kWh,4.30 öre/kWh,30.44 öre/kWh,152.21 öre/kWh,Sol_Vind_Vatten_Bra miljöval,variable_price,2026-03-22,SE1
+Bra miljöval rörligt elavtal,Sundsvall Energi AB,13.20 öre/kWh,0,98.75 öre/kWh,5.50 öre/kWh,4.57 öre/kWh,30.50 öre/kWh,152.53 öre/kWh,Vatten_Bra miljöval,variable_price,2026-03-22,SE1
+Rörligt avtal,Töre Elförsäljning AB,14.40 öre/kWh,0,98.75 öre/kWh,2.50 öre/kWh,6.98 öre/kWh,30.66 öre/kWh,153.29 öre/kWh,Vatten,variable_price,2026-03-22,SE1
+Rörligt avtal SE1,Solfolket AB,18.72 öre/kWh,0,98.75 öre/kWh,0.00 öre/kWh,5.41 öre/kWh,30.72 öre/kWh,153.60 öre/kWh,Sol_Vind_Vatten,variable_price,2026-03-22,SE1
+Rörligt månadspris-Elområde 1,Ljusdal Energi Försäljning AB,14.40 öre/kWh,0,98.75 öre/kWh,7.60 öre/kWh,2.25 öre/kWh,30.75 öre/kWh,153.75 öre/kWh,Fossilt,variable_price,2026-03-22,SE1
+Rörligt avtal elområde 1 Bra Miljöval,Gislaved Energi AB,12.00 öre/kWh,0,98.75 öre/kWh,5.50 öre/kWh,6.82 öre/kWh,30.77 öre/kWh,153.84 öre/kWh,Sol_Vind_Vatten_Biobränsle_Bra miljöval,variable_price,2026-03-22,SE1
+Rörligt månadsmedel SE1,Årsunda Eldistribution AB,15.00 öre/kWh,0,98.75 öre/kWh,3.20 öre/kWh,6.43 öre/kWh,30.84 öre/kWh,154.22 öre/kWh,Sol_Vind_Vatten,variable_price,2026-03-22,SE1
+SE1 Rörligt spot schablon,Storuman Energi AB,18.72 öre/kWh,0,98.75 öre/kWh,3.55 öre/kWh,2.82 öre/kWh,30.96 öre/kWh,154.80 öre/kWh,Fossilt,variable_price,2026-03-22,SE1
+Rörligt pris VattenEl för elområde 1,Luleå Energi AB,14.40 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,7.97 öre/kWh,31.00 öre/kWh,155.03 öre/kWh,Vatten,variable_price,2026-03-22,SE1
+Rörligt pris VindEl för elområde 1,Luleå Energi AB,14.40 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,7.97 öre/kWh,31.00 öre/kWh,155.03 öre/kWh,Vind,variable_price,2026-03-22,SE1
+Rörligt elpris återvunnen el,Bodens Energi AB,16.80 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,5.60 öre/kWh,31.01 öre/kWh,155.06 öre/kWh,Fossilt,variable_price,2026-03-22,SE1
+Rörligt pris SE1,Jönköping Energi AB,19.20 öre/kWh,0,98.75 öre/kWh,2.80 öre/kWh,3.36 öre/kWh,31.03 öre/kWh,155.14 öre/kWh,Vind_Vatten_Biobränsle,variable_price,2026-03-22,SE1
+Anvisat avtal,Töre Elförsäljning AB,14.40 öre/kWh,0,98.75 öre/kWh,4.00 öre/kWh,6.98 öre/kWh,31.03 öre/kWh,155.16 öre/kWh,Vatten,variable_price,2026-03-22,SE1
+Rörligt elpris elområde 1,Halmstads Energi och Miljö AB,15.60 öre/kWh,0,98.75 öre/kWh,2.20 öre/kWh,7.75 öre/kWh,31.07 öre/kWh,155.38 öre/kWh,Sol_Vind_Vatten_Biobränsle,variable_price,2026-03-22,SE1
+Rörligt elpris förnybar el,Bodens Energi AB,16.80 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,6.20 öre/kWh,31.16 öre/kWh,155.81 öre/kWh,Sol_Vind_Vatten_Biobränsle,variable_price,2026-03-22,SE1
+"Rörligt pris, Elområde 1",Jukkasjärvi Energi AB,18.00 öre/kWh,0,98.75 öre/kWh,4.50 öre/kWh,3.52 öre/kWh,31.19 öre/kWh,155.96 öre/kWh,Kärnkraft,variable_price,2026-03-22,SE1
+Rörligt pris elområde 1 Bra Miljöval,Eksjö Energi ELIT AB,7.50 öre/kWh,0,98.75 öre/kWh,2.60 öre/kWh,16.46 öre/kWh,31.33 öre/kWh,156.64 öre/kWh,Sol_Vind_Vatten_Biobränsle_Bra miljöval,variable_price,2026-03-22,SE1
+"Rörligt pris, Elområde 1",Härryda Energi Elhandel AB,16.80 öre/kWh,0,98.75 öre/kWh,3.90 öre/kWh,5.86 öre/kWh,31.33 öre/kWh,156.64 öre/kWh,Kärnkraft,variable_price,2026-03-22,SE1
+Rörligt pris Bra Miljöval för elområde 1,Luleå Energi AB,14.40 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,9.47 öre/kWh,31.38 öre/kWh,156.90 öre/kWh,Vind_Vatten_Bra miljöval,variable_price,2026-03-22,SE1
+Rörligt pris 100% förnybar energi,Sollentuna Elhandel AB,19.20 öre/kWh,0,98.75 öre/kWh,3.60 öre/kWh,4.49 öre/kWh,31.51 öre/kWh,157.55 öre/kWh,Sol_Vind_Vatten,variable_price,2026-03-22,SE1
+"Bondens El, Rörligt",Bondens El - LRF Samköp AB,18.00 öre/kWh,0,98.75 öre/kWh,3.20 öre/kWh,6.31 öre/kWh,31.57 öre/kWh,157.82 öre/kWh,Sol_Vind_Vatten_Biobränsle,variable_price,2026-03-22,SE1
+Rörligt Pris Fossilfritt,Varberg Energimarknad AB,14.60 öre/kWh,0,98.75 öre/kWh,3.80 öre/kWh,9.55 öre/kWh,31.68 öre/kWh,158.38 öre/kWh,Sol_Vind_Vatten_Biobränsle_Kärnkraft,variable_price,2026-03-22,SE1
+Bixia Rörligt pris elområde 1,Bixia AB,18.72 öre/kWh,0,98.75 öre/kWh,4.00 öre/kWh,5.45 öre/kWh,31.73 öre/kWh,158.65 öre/kWh,Sol_Vind_Vatten_Biobränsle,variable_price,2026-03-22,SE1
+"Gävle Energi Elhandel Rörligt elpris Elområde 1, Fossilfri el",Gävle Energisystem AB,18.72 öre/kWh,0,98.75 öre/kWh,4.72 öre/kWh,5.16 öre/kWh,31.84 öre/kWh,159.19 öre/kWh,Sol_Vind_Vatten_Biobränsle_Kärnkraft,variable_price,2026-03-22,SE1
+"Söderhamn Nära Elhandel Rörligt elpris Elområde 1, Fossilfri el",Gävle Energisystem AB,18.72 öre/kWh,0,98.75 öre/kWh,4.72 öre/kWh,5.16 öre/kWh,31.84 öre/kWh,159.19 öre/kWh,Sol_Vind_Vatten_Biobränsle_Kärnkraft,variable_price,2026-03-22,SE1
+Rörligt Pris Förnybart,Varberg Energimarknad AB,14.60 öre/kWh,0,98.75 öre/kWh,3.80 öre/kWh,10.25 öre/kWh,31.85 öre/kWh,159.25 öre/kWh,Sol_Vind_Vatten_Biobränsle,variable_price,2026-03-22,SE1
+Rörligt Elpris,Alingsås Energi,17.20 öre/kWh,0,98.75 öre/kWh,4.90 öre/kWh,7.21 öre/kWh,32.02 öre/kWh,160.07 öre/kWh,Sol_Vind_Vatten,variable_price,2026-03-22,SE1
+"Gävle Energi Elhandel Rörligt elpris Elområde 1, Förnybar el",Gävle Energisystem AB,18.72 öre/kWh,0,98.75 öre/kWh,4.72 öre/kWh,5.96 öre/kWh,32.04 öre/kWh,160.19 öre/kWh,Sol_Vind_Vatten_Biobränsle,variable_price,2026-03-22,SE1
+"Söderhamn Nära Elhandel Rörligt elpris Elområde 1, Förnybar el",Gävle Energisystem AB,18.72 öre/kWh,0,98.75 öre/kWh,4.72 öre/kWh,5.96 öre/kWh,32.04 öre/kWh,160.19 öre/kWh,Sol_Vind_Vatten_Biobränsle,variable_price,2026-03-22,SE1
+Löpande 100% Vatten OMR1,Mellanskånes Kraft AB,14.40 öre/kWh,0,98.75 öre/kWh,2.40 öre/kWh,12.98 öre/kWh,32.13 öre/kWh,160.66 öre/kWh,Sol_Vind_Vatten,variable_price,2026-03-22,SE1
+Rörligt Villavolym - Fossilfri energi - Elområde 1,Ale El Elhandel AB,23.52 öre/kWh,0,98.75 öre/kWh,0.00 öre/kWh,6.60 öre/kWh,32.22 öre/kWh,161.09 öre/kWh,Sol_Vind_Vatten_Kärnkraft,variable_price,2026-03-22,SE1
+"RÖRLIGT MÅNADSPRIS, 100 % FOSSILFRI EL",STOCKHOLMS ELBOLAG AB,19.20 öre/kWh,0,98.75 öre/kWh,1.90 öre/kWh,9.15 öre/kWh,32.25 öre/kWh,161.25 öre/kWh,Sol_Vind_Vatten_Biobränsle,variable_price,2026-03-22,SE1
+Rörligt pris 100% förnybar energi Bra miljöval,Sollentuna Elhandel AB,19.20 öre/kWh,0,98.75 öre/kWh,3.60 öre/kWh,7.49 öre/kWh,32.26 öre/kWh,161.30 öre/kWh,Sol_Vind_Vatten_Bra miljöval,variable_price,2026-03-22,SE1
+Fossilfritt - Rörligt,Falkenberg Energi AB,21.60 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,5.96 öre/kWh,32.30 öre/kWh,161.51 öre/kWh,Kärnkraft,variable_price,2026-03-22,SE1
+Månadspris - Rörligt pris med 100% fossilfri el - SN1,Öresundskraft,21.60 öre/kWh,0,98.75 öre/kWh,2.55 öre/kWh,6.62 öre/kWh,32.38 öre/kWh,161.90 öre/kWh,Sol_Vind_Vatten_Biobränsle_Kärnkraft,variable_price,2026-03-22,SE1
+Bra Miljöval - Rörligt,Falkenberg Energi AB,21.60 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,6.96 öre/kWh,32.55 öre/kWh,162.76 öre/kWh,Sol_Vind_Vatten_Bra miljöval,variable_price,2026-03-22,SE1
+Rörligt pris Tillsvidare Fossilfri El Elområde 1,E.ON,19.20 öre/kWh,0,98.75 öre/kWh,6.00 öre/kWh,6.76 öre/kWh,32.68 öre/kWh,163.39 öre/kWh,Kärnkraft,variable_price,2026-03-22,SE1
+Rörligt pris,Rödeby Energi AB,21.00 öre/kWh,0,98.75 öre/kWh,7.00 öre/kWh,4.23 öre/kWh,32.74 öre/kWh,163.72 öre/kWh,Sol_Vind_Vatten_Kärnkraft,variable_price,2026-03-22,SE1
+SE1 Rörligt spot schablon:Vattenkraft,Storuman Energi AB,18.72 öre/kWh,0,98.75 öre/kWh,11.55 öre/kWh,2.82 öre/kWh,32.96 öre/kWh,164.80 öre/kWh,Vatten,variable_price,2026-03-22,SE1
+Månadspris - Rörligt pris med Bra Miljöval - SN1,Öresundskraft,21.60 öre/kWh,0,98.75 öre/kWh,2.55 öre/kWh,9.17 öre/kWh,33.02 öre/kWh,165.09 öre/kWh,Sol_Vind_Vatten_Biobränsle_Bra miljöval,variable_price,2026-03-22,SE1
+SE1 Rörligt spot schablon:Blå El,Storuman Energi AB,18.72 öre/kWh,0,98.75 öre/kWh,11.80 öre/kWh,2.82 öre/kWh,33.02 öre/kWh,165.11 öre/kWh,Vatten,variable_price,2026-03-22,SE1
+Rörligt pris Elområde 1,Gotlands Elförsäljning AB,21.60 öre/kWh,0,98.75 öre/kWh,6.00 öre/kWh,5.76 öre/kWh,33.03 öre/kWh,165.14 öre/kWh,Sol_Vind_Vatten_Kärnkraft,variable_price,2026-03-22,SE1
+Rörligt månadspris,Mölndal Energi AB,23.52 öre/kWh,0,98.75 öre/kWh,2.00 öre/kWh,8.02 öre/kWh,33.07 öre/kWh,165.36 öre/kWh,Sol_Vind_Vatten_Biobränsle_Kärnkraft,variable_price,2026-03-22,SE1
+Rörligt Månadsavtal,PiteEnergi Handel AB,21.60 öre/kWh,0,98.75 öre/kWh,3.90 öre/kWh,8.16 öre/kWh,33.10 öre/kWh,165.51 öre/kWh,Sol_Vatten,variable_price,2026-03-22,SE1
+Rörligt Månadspris,Umeå Energi Elhandel AB,23.52 öre/kWh,0,98.75 öre/kWh,4.75 öre/kWh,5.88 öre/kWh,33.23 öre/kWh,166.13 öre/kWh,Sol_Vind_Vatten_Biobränsle_Kärnkraft,variable_price,2026-03-22,SE1
+"Rörligt elpris, fossilfri el för elområde 1",Göteborg Energi AB,21.60 öre/kWh,0,98.75 öre/kWh,6.90 öre/kWh,5.67 öre/kWh,33.23 öre/kWh,166.15 öre/kWh,Kärnkraft,variable_price,2026-03-22,SE1
+Rörligt pris Fossilfri Elmix SN1,Mälarenergi AB,23.52 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,7.87 öre/kWh,33.26 öre/kWh,166.30 öre/kWh,Sol_Vind_Vatten_Kärnkraft,variable_price,2026-03-22,SE1
+Rörligt Löpande SE1,C4 Energi AB,24.00 öre/kWh,0,98.75 öre/kWh,3.40 öre/kWh,7.22 öre/kWh,33.34 öre/kWh,166.71 öre/kWh,Sol_Vind_Vatten_Biobränsle_Kärnkraft,variable_price,2026-03-22,SE1
+Rörligt pris Solkraft SN1,Mälarenergi AB,23.52 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,8.57 öre/kWh,33.44 öre/kWh,167.18 öre/kWh,Sol,variable_price,2026-03-22,SE1
+Rörligt pris Vattenkraft SN1,Mälarenergi AB,23.52 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,8.57 öre/kWh,33.44 öre/kWh,167.18 öre/kWh,Vatten,variable_price,2026-03-22,SE1
+Rörligt pris Vindkraft SN1,Mälarenergi AB,23.52 öre/kWh,0,98.75 öre/kWh,2.90 öre/kWh,8.57 öre/kWh,33.44 öre/kWh,167.18 öre/kWh,Vind,variable_price,2026-03-22,SE1
+Rörligt Månadspris 100 % förnybart,Umeå Energi Elhandel AB,23.52 öre/kWh,0,98.75 öre/kWh,4.75 öre/kWh,6.88 öre/kWh,33.48 öre/kWh,167.38 öre/kWh,Sol_Vind_Vatten_Biobränsle,variable_price,2026-03-22,SE1
+Rörligt avtal utan bindnings- och uppsägningstid,Rebel Elhandel AB,26.40 öre/kWh,0,98.75 öre/kWh,0.00 öre/kWh,9.95 öre/kWh,33.77 öre/kWh,168.88 öre/kWh,Sol_Vind_Vatten_Kärnkraft,variable_price,2026-03-22,SE1
+Rörligt pris Vatten Elområde 1,Gotlands Elförsäljning AB,21.60 öre/kWh,0,98.75 öre/kWh,9.00 öre/kWh,5.76 öre/kWh,33.78 öre/kWh,168.89 öre/kWh,Vatten,variable_price,2026-03-22,SE1
+Rörligt pris Vind Elområde 1,Gotlands Elförsäljning AB,21.60 öre/kWh,0,98.75 öre/kWh,9.00 öre/kWh,5.76 öre/kWh,33.78 öre/kWh,168.89 öre/kWh,Vind,variable_price,2026-03-22,SE1
+Fossilfritt avtal - Rörligt elpris med Kärnkraft,Vattenfall AB,21.60 öre/kWh,0,98.75 öre/kWh,8.40 öre/kWh,6.71 öre/kWh,33.87 öre/kWh,169.32 öre/kWh,Kärnkraft,variable_price,2026-03-22,SE1
+Fossilfritt avtal - Rörligt elpris,Vattenfall AB,21.60 öre/kWh,0,98.75 öre/kWh,8.40 öre/kWh,6.71 öre/kWh,33.87 öre/kWh,169.32 öre/kWh,Vatten_Kärnkraft,variable_price,2026-03-22,SE1
+"Rörligt elpris, el från solkraft för elområde 1",Göteborg Energi AB,21.60 öre/kWh,0,98.75 öre/kWh,6.90 öre/kWh,8.57 öre/kWh,33.95 öre/kWh,169.78 öre/kWh,Sol,variable_price,2026-03-22,SE1
+"Rörligt elpris, el från vindkraft för elområde 1",Göteborg Energi AB,21.60 öre/kWh,0,98.75 öre/kWh,6.90 öre/kWh,8.57 öre/kWh,33.95 öre/kWh,169.78 öre/kWh,Vind,variable_price,2026-03-22,SE1
+Rörligt pris löpande för elområde 1,Jämtkraft AB,24.00 öre/kWh,0,98.75 öre/kWh,5.00 öre/kWh,8.25 öre/kWh,34.00 öre/kWh,170.00 öre/kWh,Sol_Vind_Vatten_Biobränsle,variable_price,2026-03-22,SE1
+Rörligt pris löpande för elområde 1 - Vindkraft,Jämtkraft AB,24.00 öre/kWh,0,98.75 öre/kWh,5.00 öre/kWh,8.25 öre/kWh,34.00 öre/kWh,170.00 öre/kWh,Vind,variable_price,2026-03-22,SE1
+Rörligt pris löpande för elområde 1 - Bra miljöval,Jämtkraft AB,24.00 öre/kWh,0,98.75 öre/kWh,5.00 öre/kWh,8.65 öre/kWh,34.10 öre/kWh,170.50 öre/kWh,Sol_Vind_Vatten_Biobränsle_Bra miljöval,variable_price,2026-03-22,SE1
+Rörligt Elpris löpande Fossilfri El Elområde 1,Kraftringen Energi AB,28.32 öre/kWh,0,98.75 öre/kWh,3.90 öre/kWh,6.02 öre/kWh,34.25 öre/kWh,171.24 öre/kWh,Kärnkraft,variable_price,2026-03-22,SE1
+Rörligt pris,Borås Elhandel AB,23.52 öre/kWh,0,98.75 öre/kWh,6.90 öre/kWh,8.19 öre/kWh,34.34 öre/kWh,171.70 öre/kWh,Sol_Vind_Vatten_Biobränsle_Kärnkraft,variable_price,2026-03-22,SE1
+Rörligt pris Tillsvidare Förnybar El Elområde 1,E.ON,26.40 öre/kWh,0,98.75 öre/kWh,6.00 öre/kWh,6.76 öre/kWh,34.48 öre/kWh,172.39 öre/kWh,Sol_Vind_Vatten_Biobränsle,variable_price,2026-03-22,SE1
+El från trakten Förnybar El Elområde 1,Kraftringen Energi AB,28.32 öre/kWh,0,98.75 öre/kWh,3.90 öre/kWh,7.88 öre/kWh,34.71 öre/kWh,173.56 öre/kWh,Sol_Vind_Biobränsle,variable_price,2026-03-22,SE1
+Fossilfritt avtal - Rörligt elpris med Vind- eller Vattenkraft,Vattenfall AB,21.60 öre/kWh,0,98.75 öre/kWh,12.40 öre/kWh,6.71 öre/kWh,34.87 öre/kWh,174.32 öre/kWh,Vind_Vatten,variable_price,2026-03-22,SE1
+Rörligt Månadspris,Fortum,33.12 öre/kWh,0,98.75 öre/kWh,3.90 öre/kWh,3.74 öre/kWh,34.88 öre/kWh,174.39 öre/kWh,Kärnkraft,variable_price,2026-03-22,SE1
+Fossilfritt avtal - Rörligt elpris med Solkraft,Vattenfall AB,21.60 öre/kWh,0,98.75 öre/kWh,13.40 öre/kWh,6.71 öre/kWh,35.12 öre/kWh,175.57 öre/kWh,Sol,variable_price,2026-03-22,SE1
+RÖRLIG el SE1,Kalmar Energi Försäljning AB,24.00 öre/kWh,0,98.75 öre/kWh,4.00 öre/kWh,15.43 öre/kWh,35.55 öre/kWh,177.72 öre/kWh,Sol_Vind_Vatten_Biobränsle,variable_price,2026-03-22,SE1
+ETC EL Rörligt pris med fast månadsavgift SE1,ETC El,23.50 öre/kWh,0,98.75 öre/kWh,0.00 öre/kWh,25.22 öre/kWh,36.87 öre/kWh,184.34 öre/kWh,Sol_Vind_Vatten,variable_price,2026-03-22,SE1
+Rörligt pris - 100% Förnybart,Telinet Energi AB,28.32 öre/kWh,0,98.75 öre/kWh,0.00 öre/kWh,25.20 öre/kWh,38.07 öre/kWh,190.34 öre/kWh,Sol_Vind_Vatten_Biobränsle,variable_price,2026-03-22,SE1
+ETC EL Rörligt pris med med solcellstillägg SE1,ETC El,28.30 öre/kWh,0,98.75 öre/kWh,0.00 öre/kWh,25.22 öre/kWh,38.07 öre/kWh,190.34 öre/kWh,Sol_Vind_Vatten,variable_price,2026-03-22,SE1
+Mixpris 1 år,SVEKRAFT AB,0.00 öre/kWh,28.00 öre/kWh,49.38 öre/kWh,2.00 öre/kWh,2.00 öre/kWh,20.34 öre/kWh,101.71 öre/kWh,Fossilt,mixed_price,2026-03-22,SE1
+"Mixpris 1 år, 100 % Fossilfri el",SVEKRAFT AB,0.00 öre/kWh,28.00 öre/kWh,49.38 öre/kWh,2.00 öre/kWh,2.00 öre/kWh,20.34 öre/kWh,101.71 öre/kWh,Sol_Vind_Vatten_Biobränsle,mixed_price,2026-03-22,SE1
+Mix 50/50 Fossilfri Elmix SN1,Mälarenergi AB,23.52 öre/kWh,32.80 öre/kWh,49.38 öre/kWh,1.45 öre/kWh,3.94 öre/kWh,27.77 öre/kWh,138.85 öre/kWh,Sol_Vind_Vatten_Kärnkraft,mixed_price,2026-03-22,SE1
+Mix 50/50 Solkraft SN1,Mälarenergi AB,23.52 öre/kWh,33.15 öre/kWh,49.38 öre/kWh,1.45 öre/kWh,4.29 öre/kWh,27.95 öre/kWh,139.72 öre/kWh,Sol,mixed_price,2026-03-22,SE1
+Mix 50/50 Vattenkraft SN1,Mälarenergi AB,23.52 öre/kWh,33.15 öre/kWh,49.38 öre/kWh,1.45 öre/kWh,4.29 öre/kWh,27.95 öre/kWh,139.72 öre/kWh,Vatten,mixed_price,2026-03-22,SE1
+Mix 50/50 Vindkraft SN1,Mälarenergi AB,23.52 öre/kWh,33.15 öre/kWh,49.38 öre/kWh,1.45 öre/kWh,4.29 öre/kWh,27.95 öre/kWh,139.72 öre/kWh,Vind,mixed_price,2026-03-22,SE1
+Fossilfritt avtal - Mixat elpris 1 år,Vattenfall AB,20.40 öre/kWh,35.55 öre/kWh,49.38 öre/kWh,4.20 öre/kWh,3.35 öre/kWh,28.22 öre/kWh,141.10 öre/kWh,Vatten_Kärnkraft,mixed_price,2026-03-22,SE1
+Fossilfritt avtal - Mixat elpris 1 år med Kärnkraft,Vattenfall AB,20.40 öre/kWh,35.55 öre/kWh,49.38 öre/kWh,4.20 öre/kWh,3.35 öre/kWh,28.22 öre/kWh,141.10 öre/kWh,Kärnkraft,mixed_price,2026-03-22,SE1
+Mix 1 år Fossilfri El Elområde 1,E.ON,19.20 öre/kWh,38.00 öre/kWh,49.38 öre/kWh,3.00 öre/kWh,3.38 öre/kWh,28.24 öre/kWh,141.19 öre/kWh,Kärnkraft,mixed_price,2026-03-22,SE1
+Mix 50/50 1 år SE1,Jönköping Energi AB,19.20 öre/kWh,43.37 öre/kWh,49.38 öre/kWh,1.40 öre/kWh,1.68 öre/kWh,28.76 öre/kWh,143.78 öre/kWh,Vind_Vatten_Biobränsle,mixed_price,2026-03-22,SE1
+Fossilfritt avtal - Mixat elpris 1 år med Vind- eller Vattenkraft,Vattenfall AB,20.40 öre/kWh,37.55 öre/kWh,49.38 öre/kWh,6.20 öre/kWh,3.35 öre/kWh,29.22 öre/kWh,146.10 öre/kWh,Vind_Vatten,mixed_price,2026-03-22,SE1
+Fossilfritt avtal - Mixat elpris 1 år med Solkraft,Vattenfall AB,20.40 öre/kWh,38.05 öre/kWh,49.38 öre/kWh,6.70 öre/kWh,3.35 öre/kWh,29.47 öre/kWh,147.35 öre/kWh,Sol,mixed_price,2026-03-22,SE1
+Mix 50/50,Borås Elhandel AB,23.52 öre/kWh,38.60 öre/kWh,49.38 öre/kWh,3.45 öre/kWh,4.09 öre/kWh,29.76 öre/kWh,148.80 öre/kWh,Sol_Vind_Vatten_Biobränsle_Kärnkraft,mixed_price,2026-03-22,SE1
+Mix 1 år Förnybar El Elområde 1,E.ON,26.40 öre/kWh,38.00 öre/kWh,49.38 öre/kWh,3.00 öre/kWh,3.38 öre/kWh,30.04 öre/kWh,150.19 öre/kWh,Sol_Vind_Vatten_Biobränsle,mixed_price,2026-03-22,SE1
+"Mix 50/50 1 år, fossilfri el för elområde 1",Göteborg Energi AB,21.60 öre/kWh,43.15 öre/kWh,49.38 öre/kWh,3.45 öre/kWh,2.83 öre/kWh,30.10 öre/kWh,150.51 öre/kWh,Kärnkraft,mixed_price,2026-03-22,SE1
+"Mix 50/50 1 år, el från solkraft för elområde 1",Göteborg Energi AB,21.60 öre/kWh,44.60 öre/kWh,49.38 öre/kWh,3.45 öre/kWh,4.29 öre/kWh,30.83 öre/kWh,154.14 öre/kWh,Sol,mixed_price,2026-03-22,SE1
+"Mix 50/50 1 år, el från vindkraft för elområde 1",Göteborg Energi AB,21.60 öre/kWh,44.60 öre/kWh,49.38 öre/kWh,3.45 öre/kWh,4.29 öre/kWh,30.83 öre/kWh,154.14 öre/kWh,Vind,mixed_price,2026-03-22,SE1
+FAST PRIS 6 MÅN,CHEAP ENERGY AB,0.00 öre/kWh,55.12 öre/kWh,0,0,0,13.78 öre/kWh,68.90 öre/kWh,Fossilt,fixed_price_6_months,2026-03-22,SE1
+"FAST PRIS 6 MÅN, NORDENMILJÖ",CHEAP ENERGY AB,0.00 öre/kWh,55.12 öre/kWh,0,0,0,13.78 öre/kWh,68.90 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_6_months,2026-03-22,SE1
+Fast pris 6 månader,SVEKRAFT AB,0.00 öre/kWh,55.19 öre/kWh,0,0,0,13.80 öre/kWh,68.99 öre/kWh,Fossilt,fixed_price_6_months,2026-03-22,SE1
+"Fast pris 6 månader, 100 % Fossilfri el",SVEKRAFT AB,0.00 öre/kWh,55.19 öre/kWh,0,0,0,13.80 öre/kWh,68.99 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_6_months,2026-03-22,SE1
+Fast elpris 6 mån återvunnnen el,Bodens Energi AB,16.80 öre/kWh,49.80 öre/kWh,0,0,0,16.65 öre/kWh,83.25 öre/kWh,Fossilt,fixed_price_6_months,2026-03-22,SE1
+Fast elpris 6 mån förnybar el,Bodens Energi AB,16.80 öre/kWh,50.50 öre/kWh,0,0,0,16.82 öre/kWh,84.13 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_6_months,2026-03-22,SE1
+FAST PRIS 6 MÅN,STOCKHOLMS ELBOLAG AB,19.20 öre/kWh,49.90 öre/kWh,0,0,0,17.27 öre/kWh,86.38 öre/kWh,Fossilt,fixed_price_6_months,2026-03-22,SE1
+Fast pris 6 månader,Motala Energi AB,9.60 öre/kWh,59.90 öre/kWh,0,0,0,17.38 öre/kWh,86.88 öre/kWh,Fossilt,fixed_price_6_months,2026-03-22,SE1
+"FAST PRIS 6 MÅN, 100 % FOSSILFRI EL",STOCKHOLMS ELBOLAG AB,19.20 öre/kWh,51.50 öre/kWh,0,0,0,17.68 öre/kWh,88.38 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_6_months,2026-03-22,SE1
+Fast pris 6 månader för elområde 1,Luleå Energi AB,14.40 öre/kWh,60.50 öre/kWh,0,0,0,18.73 öre/kWh,93.63 öre/kWh,Vatten_Kärnkraft,fixed_price_6_months,2026-03-22,SE1
+"Fast pris 6 månader, Prisområde 1",Jukkasjärvi Energi AB,18.00 öre/kWh,58.60 öre/kWh,0,0,0,19.15 öre/kWh,95.75 öre/kWh,Kärnkraft,fixed_price_6_months,2026-03-22,SE1
+Fast pris 6 månader VattenEl för elområde 1,Luleå Energi AB,14.40 öre/kWh,63.50 öre/kWh,0,0,0,19.48 öre/kWh,97.38 öre/kWh,Vatten,fixed_price_6_months,2026-03-22,SE1
+Fast pris 6 månader VindEl för elområde 1,Luleå Energi AB,14.40 öre/kWh,63.50 öre/kWh,0,0,0,19.48 öre/kWh,97.38 öre/kWh,Vind,fixed_price_6_months,2026-03-22,SE1
+Fast pris 6 månader Bra Miljöval för elområde 1,Luleå Energi AB,14.40 öre/kWh,65.00 öre/kWh,0,0,0,19.85 öre/kWh,99.25 öre/kWh,Vind_Vatten_Bra miljöval,fixed_price_6_months,2026-03-22,SE1
+FAST PRIS 6 MÅN,SVEALANDS ELBOLAG AB,33.12 öre/kWh,46.90 öre/kWh,0,0,0,20.00 öre/kWh,100.03 öre/kWh,Fossilt,fixed_price_6_months,2026-03-22,SE1
+Fast pris 6 mån Fossilfri Elmix,Mälarenergi AB,23.52 öre/kWh,58.00 öre/kWh,0,0,0,20.38 öre/kWh,101.90 öre/kWh,Sol_Vind_Vatten_Kärnkraft,fixed_price_6_months,2026-03-22,SE1
+"FAST PRIS 6 MÅN, 100 % FOSSILFRI EL",SVEALANDS ELBOLAG AB,33.12 öre/kWh,48.50 öre/kWh,0,0,0,20.41 öre/kWh,102.03 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_6_months,2026-03-22,SE1
+Fast pris 6 månader Fossilfri El Elområde 1,E.ON,19.20 öre/kWh,62.80 öre/kWh,0,0,0,20.50 öre/kWh,102.50 öre/kWh,Kärnkraft,fixed_price_6_months,2026-03-22,SE1
+Fast pris 6 mån Solkraft,Mälarenergi AB,23.52 öre/kWh,59.10 öre/kWh,0,0,0,20.66 öre/kWh,103.28 öre/kWh,Sol,fixed_price_6_months,2026-03-22,SE1
+Fast pris 6 mån Vattenkraft,Mälarenergi AB,23.52 öre/kWh,59.10 öre/kWh,0,0,0,20.66 öre/kWh,103.28 öre/kWh,Vatten,fixed_price_6_months,2026-03-22,SE1
+Fast pris 6 mån Vindkraft,Mälarenergi AB,23.52 öre/kWh,59.10 öre/kWh,0,0,0,20.66 öre/kWh,103.28 öre/kWh,Vind,fixed_price_6_months,2026-03-22,SE1
+Fossilfritt avtal - Fast elpris 6 månader,Vattenfall AB,19.20 öre/kWh,67.90 öre/kWh,0,0,0,21.77 öre/kWh,108.88 öre/kWh,Vatten_Kärnkraft,fixed_price_6_months,2026-03-22,SE1
+Fossilfritt avtal - Fast elpris 6 månader med Kärnkraft,Vattenfall AB,19.20 öre/kWh,67.90 öre/kWh,0,0,0,21.77 öre/kWh,108.88 öre/kWh,Kärnkraft,fixed_price_6_months,2026-03-22,SE1
+Fossilfritt avtal - Fast elpris 6 månader med Vind- eller Vattenkraft,Vattenfall AB,19.20 öre/kWh,67.90 öre/kWh,0,0,0,21.77 öre/kWh,108.88 öre/kWh,Vind_Vatten,fixed_price_6_months,2026-03-22,SE1
+Fast pris 6 månader 100% förnybar energi,Karlstads Energi AB,11.52 öre/kWh,76.00 öre/kWh,0,0,0,21.88 öre/kWh,109.40 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_6_months,2026-03-22,SE1
+Fossilfritt avtal - Fast elpris 6 månader med Solkraft,Vattenfall AB,19.20 öre/kWh,68.90 öre/kWh,0,0,0,22.02 öre/kWh,110.13 öre/kWh,Sol,fixed_price_6_months,2026-03-22,SE1
+"Fastpris 6 mån, elområde 1, 2 och 3",Västervik Miljö & Energi AB,12.60 öre/kWh,75.90 öre/kWh,0,0,0,22.13 öre/kWh,110.63 öre/kWh,Vatten,fixed_price_6_months,2026-03-22,SE1
+Fast pris 6 månader Förnybar El Elområde 1,E.ON,26.40 öre/kWh,62.80 öre/kWh,0,0,0,22.30 öre/kWh,111.50 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_6_months,2026-03-22,SE1
+Vattenel fast avtal 6 mån,Norrtälje Energi Försäljnings AB,12.00 öre/kWh,78.90 öre/kWh,0,0,0,22.73 öre/kWh,113.63 öre/kWh,Vatten,fixed_price_6_months,2026-03-22,SE1
+Bra Miljöval fast avtal 6 mån,Norrtälje Energi Försäljnings AB,12.00 öre/kWh,79.90 öre/kWh,0,0,0,22.98 öre/kWh,114.88 öre/kWh,Vind_Vatten_Bra miljöval,fixed_price_6_months,2026-03-22,SE1
+1899-el fast avtal 6 mån,Norrtälje Energi Försäljnings AB,12.00 öre/kWh,79.90 öre/kWh,0,0,0,22.98 öre/kWh,114.88 öre/kWh,Sol_Biobränsle,fixed_price_6_months,2026-03-22,SE1
+Fast elpris 6 mån,Mölndal Energi AB,23.52 öre/kWh,71.20 öre/kWh,0,0,0,23.68 öre/kWh,118.40 öre/kWh,Sol_Vind_Vatten_Biobränsle_Kärnkraft,fixed_price_6_months,2026-03-22,SE1
+Fastpris 6 mån,Västerbergslagens Elförsäljning AB,21.60 öre/kWh,73.70 öre/kWh,0,0,0,23.82 öre/kWh,119.13 öre/kWh,Vatten_Kärnkraft,fixed_price_6_months,2026-03-22,SE1
+"Fast pris 6 mån Elområde 1, 2, 3",Gotlands Elförsäljning AB,21.60 öre/kWh,75.00 öre/kWh,0,0,0,24.15 öre/kWh,120.75 öre/kWh,Sol_Vind_Vatten_Kärnkraft,fixed_price_6_months,2026-03-22,SE1
+"Fast pris 6 mån Vatten Elområde 1, 2, 3",Gotlands Elförsäljning AB,21.60 öre/kWh,78.00 öre/kWh,0,0,0,24.90 öre/kWh,124.50 öre/kWh,Vatten,fixed_price_6_months,2026-03-22,SE1
+"Fast pris 6 mån Vind Elområde 1, 2, 3",Gotlands Elförsäljning AB,21.60 öre/kWh,78.00 öre/kWh,0,0,0,24.90 öre/kWh,124.50 öre/kWh,Vind,fixed_price_6_months,2026-03-22,SE1
+Fast pris 6 månader SE1,Jönköping Energi AB,19.20 öre/kWh,80.43 öre/kWh,0,0,0,24.91 öre/kWh,124.54 öre/kWh,Vind_Vatten_Biobränsle,fixed_price_6_months,2026-03-22,SE1
+Fastpris 6 mån vattenkraft,Västerbergslagens Elförsäljning AB,21.60 öre/kWh,80.70 öre/kWh,0,0,0,25.57 öre/kWh,127.88 öre/kWh,Vatten,fixed_price_6_months,2026-03-22,SE1
+Fast pris 6 månader,Telinet Energi AB,33.12 öre/kWh,77.40 öre/kWh,0,0,0,27.63 öre/kWh,138.15 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_6_months,2026-03-22,SE1
+Fast pris 1 år,SVEKRAFT AB,0.00 öre/kWh,55.99 öre/kWh,0,0,0,14.00 öre/kWh,69.99 öre/kWh,Fossilt,fixed_price_1_year,2026-03-22,SE1
+"Fast pris 1 år, 100 % Fossilfri el",SVEKRAFT AB,0.00 öre/kWh,55.99 öre/kWh,0,0,0,14.00 öre/kWh,69.99 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_1_year,2026-03-22,SE1
+FAST PRIS 1 ÅR,CHEAP ENERGY AB,0.00 öre/kWh,58.32 öre/kWh,0,0,0,14.58 öre/kWh,72.90 öre/kWh,Fossilt,fixed_price_1_year,2026-03-22,SE1
+"FAST PRIS 1 ÅR, NORDENMILJÖ",CHEAP ENERGY AB,0.00 öre/kWh,58.32 öre/kWh,0,0,0,14.58 öre/kWh,72.90 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_1_year,2026-03-22,SE1
+Fast pris 1 år,Motala Energi AB,9.60 öre/kWh,56.90 öre/kWh,0,0,0,16.63 öre/kWh,83.13 öre/kWh,Fossilt,fixed_price_1_year,2026-03-22,SE1
+"Fastpris 1 år, 100 % förnybar energi, ingen fast avgift",Sala-Heby Energi AB,0.00 öre/kWh,66.80 öre/kWh,0,0,0,16.70 öre/kWh,83.50 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_1_year,2026-03-22,SE1
+FAST PRIS 1 ÅR,STOCKHOLMS ELBOLAG AB,19.20 öre/kWh,51.90 öre/kWh,0,0,0,17.77 öre/kWh,88.88 öre/kWh,Fossilt,fixed_price_1_year,2026-03-22,SE1
+"FAST PRIS 1 ÅR, 100 % FOSSILFRI EL",STOCKHOLMS ELBOLAG AB,19.20 öre/kWh,53.50 öre/kWh,0,0,0,18.18 öre/kWh,90.88 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_1_year,2026-03-22,SE1
+Fast elpris 1 år återvunnnen el,Bodens Energi AB,16.80 öre/kWh,59.30 öre/kWh,0,0,0,19.02 öre/kWh,95.13 öre/kWh,Fossilt,fixed_price_1_year,2026-03-22,SE1
+Fast pris,Sundsvall Energi AB,13.20 öre/kWh,63.49 öre/kWh,0,0,0,19.17 öre/kWh,95.86 öre/kWh,Fossilt,fixed_price_1_year,2026-03-22,SE1
+Fast elpris 1 år förnybar el,Bodens Energi AB,16.80 öre/kWh,60.00 öre/kWh,0,0,0,19.20 öre/kWh,96.00 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_1_year,2026-03-22,SE1
+Fast pris 1 år,Töre Elförsäljning AB,15.00 öre/kWh,66.00 öre/kWh,0,0,0,20.25 öre/kWh,101.25 öre/kWh,Vatten,fixed_price_1_year,2026-03-22,SE1
+SE1 Fast pris 1 år,Storuman Energi AB,18.72 öre/kWh,63.18 öre/kWh,0,0,0,20.48 öre/kWh,102.38 öre/kWh,Fossilt,fixed_price_1_year,2026-03-22,SE1
+FAST PRIS 1 ÅR,SVEALANDS ELBOLAG AB,33.12 öre/kWh,49.90 öre/kWh,0,0,0,20.75 öre/kWh,103.78 öre/kWh,Fossilt,fixed_price_1_year,2026-03-22,SE1
+Fast pris 1 år Prisområde 1,Jukkasjärvi Energi AB,18.00 öre/kWh,66.10 öre/kWh,0,0,0,21.02 öre/kWh,105.13 öre/kWh,Kärnkraft,fixed_price_1_year,2026-03-22,SE1
+Fast pris 1 år för elområde 1,Luleå Energi AB,14.40 öre/kWh,69.90 öre/kWh,0,0,0,21.07 öre/kWh,105.38 öre/kWh,Vatten_Kärnkraft,fixed_price_1_year,2026-03-22,SE1
+Fast pris 1 år elområde 1,Eksjö Energi ELIT AB,7.50 öre/kWh,77.10 öre/kWh,0,0,0,21.15 öre/kWh,105.75 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_1_year,2026-03-22,SE1
+"FAST PRIS 1 ÅR, 100 % FOSSILFRI EL",SVEALANDS ELBOLAG AB,33.12 öre/kWh,51.50 öre/kWh,0,0,0,21.16 öre/kWh,105.78 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_1_year,2026-03-22,SE1
+Fast pris 1 år VattenEl för elområde 1,Luleå Energi AB,14.40 öre/kWh,72.90 öre/kWh,0,0,0,21.82 öre/kWh,109.13 öre/kWh,Vatten,fixed_price_1_year,2026-03-22,SE1
+Fast pris 1 år VindEl för elområde 1,Luleå Energi AB,14.40 öre/kWh,72.90 öre/kWh,0,0,0,21.82 öre/kWh,109.13 öre/kWh,Vind,fixed_price_1_year,2026-03-22,SE1
+Fast Avtal 1 år,PiteEnergi Handel AB,21.60 öre/kWh,66.90 öre/kWh,0,0,0,22.13 öre/kWh,110.63 öre/kWh,Sol_Vatten,fixed_price_1_year,2026-03-22,SE1
+Fast pris 1 år Bra Miljöval för elområde 1,Luleå Energi AB,14.40 öre/kWh,74.40 öre/kWh,0,0,0,22.20 öre/kWh,111.00 öre/kWh,Vind_Vatten_Bra miljöval,fixed_price_1_year,2026-03-22,SE1
+Fast pris 1 år Fossilfri Elmix,Mälarenergi AB,23.52 öre/kWh,66.20 öre/kWh,0,0,0,22.43 öre/kWh,112.15 öre/kWh,Sol_Vind_Vatten_Kärnkraft,fixed_price_1_year,2026-03-22,SE1
+SE1 Fast pris 1 år:Vattenkraft,Storuman Energi AB,18.72 öre/kWh,71.18 öre/kWh,0,0,0,22.48 öre/kWh,112.38 öre/kWh,Vatten,fixed_price_1_year,2026-03-22,SE1
+SE1 Fast pris 1 år:Blå EL,Storuman Energi AB,18.72 öre/kWh,71.43 öre/kWh,0,0,0,22.54 öre/kWh,112.69 öre/kWh,Vatten,fixed_price_1_year,2026-03-22,SE1
+Fossilfritt avtal - Fast elpris 1 år med Kärnkraft,Vattenfall AB,19.20 öre/kWh,71.10 öre/kWh,0,0,0,22.57 öre/kWh,112.88 öre/kWh,Kärnkraft,fixed_price_1_year,2026-03-22,SE1
+Fossilfritt avtal - Fast elpris 1 år,Vattenfall AB,19.20 öre/kWh,71.10 öre/kWh,0,0,0,22.57 öre/kWh,112.88 öre/kWh,Vatten_Kärnkraft,fixed_price_1_year,2026-03-22,SE1
+Fast pris 1 år Solkraft,Mälarenergi AB,23.52 öre/kWh,67.30 öre/kWh,0,0,0,22.70 öre/kWh,113.53 öre/kWh,Sol,fixed_price_1_year,2026-03-22,SE1
+Fast pris 1 år Vattenkraft,Mälarenergi AB,23.52 öre/kWh,67.30 öre/kWh,0,0,0,22.70 öre/kWh,113.53 öre/kWh,Vind,fixed_price_1_year,2026-03-22,SE1
+Fast pris 1 år Vindkraft,Mälarenergi AB,23.52 öre/kWh,67.30 öre/kWh,0,0,0,22.70 öre/kWh,113.53 öre/kWh,Vatten,fixed_price_1_year,2026-03-22,SE1
+"Fast pris 1 år område 1, 100% fossilfri energi!",BestEl,16.80 öre/kWh,74.50 öre/kWh,0,0,0,22.82 öre/kWh,114.13 öre/kWh,Sol_Vind_Vatten_Kärnkraft,fixed_price_1_year,2026-03-22,SE1
+Fast elpris 1 år,Skellefteå Kraft AB,23.52 öre/kWh,69.00 öre/kWh,0,0,0,23.13 öre/kWh,115.65 öre/kWh,Vind_Vatten,fixed_price_1_year,2026-03-22,SE1
+Fossilfritt avtal - Fast elpris 1 år med Vind- eller Vattenkraft,Vattenfall AB,19.20 öre/kWh,75.10 öre/kWh,0,0,0,23.57 öre/kWh,117.88 öre/kWh,Vind_Vatten,fixed_price_1_year,2026-03-22,SE1
+Fast pris 1 år elområde 1 Bra Miljöval,Eksjö Energi ELIT AB,7.50 öre/kWh,87.10 öre/kWh,0,0,0,23.65 öre/kWh,118.25 öre/kWh,Sol_Vind_Vatten_Biobränsle_Bra miljöval,fixed_price_1_year,2026-03-22,SE1
+Fast pris 1 år Fossilfri El Elområde 1,E.ON,19.20 öre/kWh,76.00 öre/kWh,0,0,0,23.80 öre/kWh,119.00 öre/kWh,Kärnkraft,fixed_price_1_year,2026-03-22,SE1
+Fossilfritt avtal - Fast elpris 1 år med Solkraft,Vattenfall AB,19.20 öre/kWh,76.10 öre/kWh,0,0,0,23.82 öre/kWh,119.13 öre/kWh,Sol,fixed_price_1_year,2026-03-22,SE1
+"Fastpris 1 år, elområde 1, 2 och 3",Östra Kinds Elkraft AB,12.00 öre/kWh,84.20 öre/kWh,0,0,0,24.05 öre/kWh,120.25 öre/kWh,Fossilt,fixed_price_1_year,2026-03-22,SE1
+Fastpris 1 år,Rödeby Energi AB,21.00 öre/kWh,76.00 öre/kWh,0,0,0,24.25 öre/kWh,121.25 öre/kWh,Sol_Vind_Vatten_Kärnkraft,fixed_price_1_year,2026-03-22,SE1
+"Fastpris 1 år Vatten, Elområde 1, 2 och 3",Östra Kinds Elkraft AB,12.00 öre/kWh,85.16 öre/kWh,0,0,0,24.29 öre/kWh,121.45 öre/kWh,Vatten,fixed_price_1_year,2026-03-22,SE1
+"Fastpris 1 år Vind, Elområde 1, 2 och 3",Östra Kinds Elkraft AB,12.00 öre/kWh,85.16 öre/kWh,0,0,0,24.29 öre/kWh,121.45 öre/kWh,Vind,fixed_price_1_year,2026-03-22,SE1
+Fast elpris 1 år,Mölndal Energi AB,23.52 öre/kWh,74.40 öre/kWh,0,0,0,24.48 öre/kWh,122.40 öre/kWh,Sol_Vind_Vatten_Biobränsle_Kärnkraft,fixed_price_1_year,2026-03-22,SE1
+"Fastpris 1 år för elområde 1,2 och 3",Bengtsfors Energi Handel AB,12.00 öre/kWh,87.20 öre/kWh,0,0,0,24.80 öre/kWh,124.00 öre/kWh,Vatten,fixed_price_1_year,2026-03-22,SE1
+Fast pris 1 år 100% förnybar energi,Karlstads Energi AB,11.52 öre/kWh,88.00 öre/kWh,0,0,0,24.88 öre/kWh,124.40 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_1_year,2026-03-22,SE1
+"Fastpris 1 år, Elområde 1, 2 och 3",Njudung Energi AB,12.60 öre/kWh,87.10 öre/kWh,0,0,0,24.93 öre/kWh,124.63 öre/kWh,Fossilt,fixed_price_1_year,2026-03-22,SE1
+"Fastpris 1 år, elområde 1, 2 och 3",Västervik Miljö & Energi AB,12.60 öre/kWh,87.30 öre/kWh,0,0,0,24.98 öre/kWh,124.88 öre/kWh,Vatten,fixed_price_1_year,2026-03-22,SE1
+Fastpris 12 mån,Borås Elhandel AB,23.52 öre/kWh,77.20 öre/kWh,0,0,0,25.18 öre/kWh,125.90 öre/kWh,Sol_Vind_Vatten_Kärnkraft,fixed_price_1_year,2026-03-22,SE1
+Fastpris 1 år,Falu Energi & Vatten AB,1.40 öre/kWh,99.90 öre/kWh,0,0,0,25.32 öre/kWh,126.63 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_1_year,2026-03-22,SE1
+Vattenel fast avtal 1 år,Norrtälje Energi Försäljnings AB,12.00 öre/kWh,89.40 öre/kWh,0,0,0,25.35 öre/kWh,126.75 öre/kWh,Vatten,fixed_price_1_year,2026-03-22,SE1
+Bra Miljöval fast avtal 1 år,Norrtälje Energi Försäljnings AB,12.00 öre/kWh,90.40 öre/kWh,0,0,0,25.60 öre/kWh,128.00 öre/kWh,Vind_Vatten_Bra miljöval,fixed_price_1_year,2026-03-22,SE1
+Fast pris 1 år Förnybar El Elområde 1,E.ON,26.40 öre/kWh,76.00 öre/kWh,0,0,0,25.60 öre/kWh,128.00 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_1_year,2026-03-22,SE1
+1899-el fast avtal 1 år,Norrtälje Energi Försäljnings AB,12.00 öre/kWh,90.40 öre/kWh,0,0,0,25.60 öre/kWh,128.00 öre/kWh,Sol_Biobränsle,fixed_price_1_year,2026-03-22,SE1
+"Fastpris 1 år, elområde 1, 2 och 3",Härryda Energi Elhandel AB,16.80 öre/kWh,86.80 öre/kWh,0,0,0,25.90 öre/kWh,129.50 öre/kWh,Kärnkraft,fixed_price_1_year,2026-03-22,SE1
+Fast pris 12 månader,Telinet Energi AB,33.12 öre/kWh,71.20 öre/kWh,0,0,0,26.08 öre/kWh,130.40 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_1_year,2026-03-22,SE1
+"Fast pris 1 år, VindEl Elområde 1,2 och 3",Njudung Energi AB,12.60 öre/kWh,92.10 öre/kWh,0,0,0,26.18 öre/kWh,130.88 öre/kWh,Vind,fixed_price_1_year,2026-03-22,SE1
+"Fast pris 1 år,Vattenkraft Elområde 1,2 och 3",Njudung Energi AB,12.60 öre/kWh,92.10 öre/kWh,0,0,0,26.18 öre/kWh,130.88 öre/kWh,Vatten,fixed_price_1_year,2026-03-22,SE1
+"Fast pris 1 år, elområde 1, 2 och 3",Lerum Elhandel AB,18.70 öre/kWh,86.60 öre/kWh,0,0,0,26.32 öre/kWh,131.63 öre/kWh,Kärnkraft,fixed_price_1_year,2026-03-22,SE1
+Fastpris 1 år,Västerbergslagens Elförsäljning AB,21.60 öre/kWh,83.70 öre/kWh,0,0,0,26.32 öre/kWh,131.63 öre/kWh,Vatten_Kärnkraft,fixed_price_1_year,2026-03-22,SE1
+Fast Pris 1 år Fossilfritt,Varberg Energimarknad AB,14.60 öre/kWh,90.78 öre/kWh,0,0,0,26.34 öre/kWh,131.72 öre/kWh,Sol_Vind_Vatten_Biobränsle_Kärnkraft,fixed_price_1_year,2026-03-22,SE1
+Fast pris 1 år SE1,Jönköping Energi AB,19.20 öre/kWh,86.74 öre/kWh,0,0,0,26.48 öre/kWh,132.43 öre/kWh,Vind_Vatten_Biobränsle,fixed_price_1_year,2026-03-22,SE1
+Fast Pris 1 år Förnybart,Varberg Energimarknad AB,14.60 öre/kWh,91.69 öre/kWh,0,0,0,26.57 öre/kWh,132.86 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_1_year,2026-03-22,SE1
+"Fast pris 1 år Elområde 1, 2, 3",Gotlands Elförsäljning AB,21.60 öre/kWh,86.00 öre/kWh,0,0,0,26.90 öre/kWh,134.50 öre/kWh,Sol_Vind_Vatten_Kärnkraft,fixed_price_1_year,2026-03-22,SE1
+"Fast elpris 1 år, fossilfri el för elområde 1",Göteborg Energi AB,21.60 öre/kWh,86.30 öre/kWh,0,0,0,26.98 öre/kWh,134.88 öre/kWh,Kärnkraft,fixed_price_1_year,2026-03-22,SE1
+Fossilfritt - Fastpris 1 år,Falkenberg Energi AB,21.60 öre/kWh,86.60 öre/kWh,0,0,0,27.05 öre/kWh,135.25 öre/kWh,Kärnkraft,fixed_price_1_year,2026-03-22,SE1
+Bra Miljöval - Fastpris 1 år,Falkenberg Energi AB,21.60 öre/kWh,88.60 öre/kWh,0,0,0,27.55 öre/kWh,137.75 öre/kWh,Sol_Vind_Vatten_Bra miljöval,fixed_price_1_year,2026-03-22,SE1
+"Fast pris 1 år Vatten Elområde 1, 2, 3",Gotlands Elförsäljning AB,21.60 öre/kWh,89.00 öre/kWh,0,0,0,27.65 öre/kWh,138.25 öre/kWh,Vatten,fixed_price_1_year,2026-03-22,SE1
+"Fast pris 1 år Vind Elområde 1, 2, 3",Gotlands Elförsäljning AB,21.60 öre/kWh,89.00 öre/kWh,0,0,0,27.65 öre/kWh,138.25 öre/kWh,Vind,fixed_price_1_year,2026-03-22,SE1
+"Fast pris 12 månader med fossilfri el - Lägenhet, för elområde 1",Fortum,23.52 öre/kWh,87.20 öre/kWh,0,0,0,27.68 öre/kWh,138.40 öre/kWh,Kärnkraft,fixed_price_1_year,2026-03-22,SE1
+"Fast elpris 1 år, el från solkraft för elområde 1",Göteborg Energi AB,21.60 öre/kWh,89.20 öre/kWh,0,0,0,27.70 öre/kWh,138.50 öre/kWh,Sol,fixed_price_1_year,2026-03-22,SE1
+"Fast elpris 1 år, el från vindkraft för elområde 1",Göteborg Energi AB,21.60 öre/kWh,89.20 öre/kWh,0,0,0,27.70 öre/kWh,138.50 öre/kWh,Vind,fixed_price_1_year,2026-03-22,SE1
+Fastpris 1 år Vattenkraft,Västerbergslagens Elförsäljning AB,21.60 öre/kWh,90.70 öre/kWh,0,0,0,28.07 öre/kWh,140.38 öre/kWh,Vatten,fixed_price_1_year,2026-03-22,SE1
+Fast Elpris 1 år Fossilfri El Elområde 1,Kraftringen Energi AB,28.32 öre/kWh,95.40 öre/kWh,0,0,0,30.93 öre/kWh,154.65 öre/kWh,Kärnkraft,fixed_price_1_year,2026-03-22,SE1
+Fast pris 1 år,Halmstads Energi och Miljö AB,16.80 öre/kWh,108.00 öre/kWh,0,0,0,31.20 öre/kWh,156.00 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_1_year,2026-03-22,SE1
+"Fast pris 12 månader med Miljöpaket - Lägenhet, för elområde 1",Fortum,45.12 öre/kWh,87.20 öre/kWh,0,0,0,33.08 öre/kWh,165.40 öre/kWh,Sol_Vind_Vatten,fixed_price_1_year,2026-03-22,SE1
+FAST PRIS 2 ÅR,CHEAP ENERGY AB,0.00 öre/kWh,59.92 öre/kWh,0,0,0,14.98 öre/kWh,74.90 öre/kWh,Fossilt,fixed_price_2_years,2026-03-22,SE1
+"FAST PRIS 2 ÅR, NORDENMILJÖ",CHEAP ENERGY AB,0.00 öre/kWh,59.92 öre/kWh,0,0,0,14.98 öre/kWh,74.90 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_2_years,2026-03-22,SE1
+"Fastpris 2 år, 100 % förnybar energi, ingen fast avgift",Sala-Heby Energi AB,0.00 öre/kWh,67.00 öre/kWh,0,0,0,16.75 öre/kWh,83.75 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_2_years,2026-03-22,SE1
+FAST PRIS 2 ÅR,STOCKHOLMS ELBOLAG AB,19.20 öre/kWh,53.90 öre/kWh,0,0,0,18.27 öre/kWh,91.38 öre/kWh,Fossilt,fixed_price_2_years,2026-03-22,SE1
+Fast elpris 2 år återvunnnen el,Bodens Energi AB,16.80 öre/kWh,57.10 öre/kWh,0,0,0,18.48 öre/kWh,92.38 öre/kWh,Fossilt,fixed_price_2_years,2026-03-22,SE1
+Fast elpris 2 år förnybar el,Bodens Energi AB,16.80 öre/kWh,57.80 öre/kWh,0,0,0,18.65 öre/kWh,93.25 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_2_years,2026-03-22,SE1
+"FAST PRIS 2 ÅR, 100 % FOSSILFRI EL",STOCKHOLMS ELBOLAG AB,19.20 öre/kWh,55.50 öre/kWh,0,0,0,18.68 öre/kWh,93.38 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_2_years,2026-03-22,SE1
+SE1 Fast pris 2 år,Storuman Energi AB,18.72 öre/kWh,60.86 öre/kWh,0,0,0,19.89 öre/kWh,99.47 öre/kWh,Fossilt,fixed_price_2_years,2026-03-22,SE1
+Fast pris 2 år Prisområde 1,Jukkasjärvi Energi AB,18.00 öre/kWh,62.80 öre/kWh,0,0,0,20.20 öre/kWh,101.00 öre/kWh,Kärnkraft,fixed_price_2_years,2026-03-22,SE1
+Fast pris 2 år,Töre Elförsäljning AB,15.00 öre/kWh,67.00 öre/kWh,0,0,0,20.50 öre/kWh,102.50 öre/kWh,Vatten,fixed_price_2_years,2026-03-22,SE1
+FAST PRIS 2 ÅR,SVEALANDS ELBOLAG AB,33.12 öre/kWh,51.90 öre/kWh,0,0,0,21.25 öre/kWh,106.28 öre/kWh,Fossilt,fixed_price_2_years,2026-03-22,SE1
+"Fast pris 2 år område 1,100% fossilfri energi!",BestEl,16.80 öre/kWh,68.30 öre/kWh,0,0,0,21.27 öre/kWh,106.38 öre/kWh,Sol_Vind_Vatten_Kärnkraft,fixed_price_2_years,2026-03-22,SE1
+"FAST PRIS 2 ÅR, 100 % FOSSILFRI EL",SVEALANDS ELBOLAG AB,33.12 öre/kWh,53.50 öre/kWh,0,0,0,21.66 öre/kWh,108.28 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_2_years,2026-03-22,SE1
+SE1 Fast pris 2 år:Vattenkraft,Storuman Energi AB,18.72 öre/kWh,68.86 öre/kWh,0,0,0,21.89 öre/kWh,109.47 öre/kWh,Vatten,fixed_price_2_years,2026-03-22,SE1
+SE1 Fast pris 2 år:Blå EL,Storuman Energi AB,18.72 öre/kWh,69.11 öre/kWh,0,0,0,21.96 öre/kWh,109.79 öre/kWh,Vatten,fixed_price_2_years,2026-03-22,SE1
+Fast pris 2 år 100% förnybar energi,Karlstads Energi AB,11.52 öre/kWh,78.00 öre/kWh,0,0,0,22.38 öre/kWh,111.90 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_2_years,2026-03-22,SE1
+Fast Avtal 2 år,PiteEnergi Handel AB,21.60 öre/kWh,68.50 öre/kWh,0,0,0,22.52 öre/kWh,112.63 öre/kWh,Sol_Vatten,fixed_price_2_years,2026-03-22,SE1
+Fast pris 2 år Fossilfri El Elområde 1,E.ON,19.20 öre/kWh,71.80 öre/kWh,0,0,0,22.75 öre/kWh,113.75 öre/kWh,Kärnkraft,fixed_price_2_years,2026-03-22,SE1
+"Fast pris 2 år Elområde 1,2 och 3",Njudung Energi AB,12.60 öre/kWh,79.40 öre/kWh,0,0,0,23.00 öre/kWh,115.00 öre/kWh,Fossilt,fixed_price_2_years,2026-03-22,SE1
+"Fastpris 2 år, elområde 1, 2 och 3",Västervik Miljö & Energi AB,12.60 öre/kWh,79.90 öre/kWh,0,0,0,23.13 öre/kWh,115.63 öre/kWh,Vatten,fixed_price_2_years,2026-03-22,SE1
+Fast elpris 2 år,Skellefteå Kraft AB,23.52 öre/kWh,69.40 öre/kWh,0,0,0,23.23 öre/kWh,116.15 öre/kWh,Vind_Vatten,fixed_price_2_years,2026-03-22,SE1
+"Fast pris 2 år Vattenkraft Elområde 1,2 och 3",Njudung Energi AB,12.60 öre/kWh,84.40 öre/kWh,0,0,0,24.25 öre/kWh,121.25 öre/kWh,Vatten,fixed_price_2_years,2026-03-22,SE1
+"Fast pris 2 år VindEl Elområde 1,2 och 3",Njudung Energi AB,12.60 öre/kWh,84.40 öre/kWh,0,0,0,24.25 öre/kWh,121.25 öre/kWh,Vind,fixed_price_2_years,2026-03-22,SE1
+Fast pris 2 år Förnybar El Elområde 1,E.ON,26.40 öre/kWh,71.80 öre/kWh,0,0,0,24.55 öre/kWh,122.75 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_2_years,2026-03-22,SE1
+Fast pris 24 månader,Telinet Energi AB,33.12 öre/kWh,74.20 öre/kWh,0,0,0,26.83 öre/kWh,134.15 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_2_years,2026-03-22,SE1
+FAST PRIS 3 ÅR,CHEAP ENERGY AB,0.00 öre/kWh,59.92 öre/kWh,0,0,0,14.98 öre/kWh,74.90 öre/kWh,Fossilt,fixed_price_3_years,2026-03-22,SE1
+"FAST PRIS 3 ÅR, NORDENMILJÖ",CHEAP ENERGY AB,0.00 öre/kWh,59.92 öre/kWh,0,0,0,14.98 öre/kWh,74.90 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_3_years,2026-03-22,SE1
+Fast pris 3 år,SVEKRAFT AB,0.00 öre/kWh,59.99 öre/kWh,0,0,0,15.00 öre/kWh,74.99 öre/kWh,Fossilt,fixed_price_3_years,2026-03-22,SE1
+"Fast pris 3 år, 100 % Fossilfri el",SVEKRAFT AB,0.00 öre/kWh,59.99 öre/kWh,0,0,0,15.00 öre/kWh,74.99 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_3_years,2026-03-22,SE1
+"Fastpris 3 år, 100 % förnybar energi, ingen fast avgift",Sala-Heby Energi AB,0.00 öre/kWh,68.10 öre/kWh,0,0,0,17.02 öre/kWh,85.13 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_3_years,2026-03-22,SE1
+Fast pris 3 år,Motala Energi AB,9.60 öre/kWh,59.90 öre/kWh,0,0,0,17.38 öre/kWh,86.88 öre/kWh,Fossilt,fixed_price_3_years,2026-03-22,SE1
+FAST PRIS 3 ÅR,STOCKHOLMS ELBOLAG AB,19.20 öre/kWh,53.90 öre/kWh,0,0,0,18.27 öre/kWh,91.38 öre/kWh,Fossilt,fixed_price_3_years,2026-03-22,SE1
+Fast elpris 3 år återvunnnen el,Bodens Energi AB,16.80 öre/kWh,56.50 öre/kWh,0,0,0,18.32 öre/kWh,91.63 öre/kWh,Fossilt,fixed_price_3_years,2026-03-22,SE1
+Fast elpris 3 år förnybar el,Bodens Energi AB,16.80 öre/kWh,57.20 öre/kWh,0,0,0,18.50 öre/kWh,92.50 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_3_years,2026-03-22,SE1
+"FAST PRIS 3 ÅR, 100 % FOSSILFRI EL",STOCKHOLMS ELBOLAG AB,19.20 öre/kWh,55.50 öre/kWh,0,0,0,18.68 öre/kWh,93.38 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_3_years,2026-03-22,SE1
+SE1 Fast pris 3 år,Storuman Energi AB,18.72 öre/kWh,59.44 öre/kWh,0,0,0,19.54 öre/kWh,97.70 öre/kWh,Fossilt,fixed_price_3_years,2026-03-22,SE1
+Fast pris 3 år för elområde 1,Luleå Energi AB,14.40 öre/kWh,64.50 öre/kWh,0,0,0,19.73 öre/kWh,98.63 öre/kWh,Vatten_Kärnkraft,fixed_price_3_years,2026-03-22,SE1
+Fast pris 3 år,Töre Elförsäljning AB,15.00 öre/kWh,65.00 öre/kWh,0,0,0,20.00 öre/kWh,100.00 öre/kWh,Vatten,fixed_price_3_years,2026-03-22,SE1
+Fast pris 3 år VattenEl för elområde 1,Luleå Energi AB,14.40 öre/kWh,67.50 öre/kWh,0,0,0,20.48 öre/kWh,102.38 öre/kWh,Vatten,fixed_price_3_years,2026-03-22,SE1
+Fast pris 3 år VindEl för elområde 1,Luleå Energi AB,14.40 öre/kWh,67.50 öre/kWh,0,0,0,20.48 öre/kWh,102.38 öre/kWh,Vind,fixed_price_3_years,2026-03-22,SE1
+Fast pris 3 år Prisområde 1,Jukkasjärvi Energi AB,18.00 öre/kWh,64.70 öre/kWh,0,0,0,20.68 öre/kWh,103.38 öre/kWh,Kärnkraft,fixed_price_3_years,2026-03-22,SE1
+"Fast pris 3 år område 1, 100% fossilfri energi!",BestEl,16.80 öre/kWh,66.40 öre/kWh,0,0,0,20.80 öre/kWh,104.00 öre/kWh,Sol_Vind_Vatten_Kärnkraft,fixed_price_3_years,2026-03-22,SE1
+Fast pris 3 år Bra Miljöval för elområde 1,Luleå Energi AB,14.40 öre/kWh,69.00 öre/kWh,0,0,0,20.85 öre/kWh,104.25 öre/kWh,Vind_Vatten_Bra miljöval,fixed_price_3_years,2026-03-22,SE1
+FAST PRIS 3 ÅR,SVEALANDS ELBOLAG AB,33.12 öre/kWh,51.90 öre/kWh,0,0,0,21.25 öre/kWh,106.28 öre/kWh,Fossilt,fixed_price_3_years,2026-03-22,SE1
+Fast pris 3 år Fossilfri Elmix,Mälarenergi AB,23.52 öre/kWh,61.70 öre/kWh,0,0,0,21.30 öre/kWh,106.53 öre/kWh,Sol_Vind_Vatten_Kärnkraft,fixed_price_3_years,2026-03-22,SE1
+Fast pris 3 år 100% förnybar energi,Karlstads Energi AB,11.52 öre/kWh,74.00 öre/kWh,0,0,0,21.38 öre/kWh,106.90 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_3_years,2026-03-22,SE1
+SE1 Fast pris 3 år:Vattenkraft,Storuman Energi AB,18.72 öre/kWh,67.44 öre/kWh,0,0,0,21.54 öre/kWh,107.70 öre/kWh,Vatten,fixed_price_3_years,2026-03-22,SE1
+SE1 Fast pris 3 år:Blå EL,Storuman Energi AB,18.72 öre/kWh,67.69 öre/kWh,0,0,0,21.60 öre/kWh,108.01 öre/kWh,Vatten,fixed_price_3_years,2026-03-22,SE1
+Fast pris 3 år Solkraft,Mälarenergi AB,23.52 öre/kWh,63.00 öre/kWh,0,0,0,21.63 öre/kWh,108.15 öre/kWh,Sol,fixed_price_3_years,2026-03-22,SE1
+Fast pris 3 år Vattenkraft,Mälarenergi AB,23.52 öre/kWh,63.00 öre/kWh,0,0,0,21.63 öre/kWh,108.15 öre/kWh,Vatten,fixed_price_3_years,2026-03-22,SE1
+Fast pris 3 år Vindkraft,Mälarenergi AB,23.52 öre/kWh,63.00 öre/kWh,0,0,0,21.63 öre/kWh,108.15 öre/kWh,Vind,fixed_price_3_years,2026-03-22,SE1
+"FAST PRIS 3 ÅR, 100 % FOSSILFRI EL",SVEALANDS ELBOLAG AB,33.12 öre/kWh,53.50 öre/kWh,0,0,0,21.66 öre/kWh,108.28 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_3_years,2026-03-22,SE1
+"Fastpris 3 år, elområde 1, 2 och 3",Östra Kinds Elkraft AB,12.00 öre/kWh,77.40 öre/kWh,0,0,0,22.35 öre/kWh,111.75 öre/kWh,Fossilt,fixed_price_3_years,2026-03-22,SE1
+Fast pris 3 år Fossilfri El Elområde 1,E.ON,19.20 öre/kWh,71.00 öre/kWh,0,0,0,22.55 öre/kWh,112.75 öre/kWh,Kärnkraft,fixed_price_3_years,2026-03-22,SE1
+"Fastpris 3 år Vatten, Elområde 1, 2 och 3",Östra Kinds Elkraft AB,12.00 öre/kWh,78.36 öre/kWh,0,0,0,22.59 öre/kWh,112.95 öre/kWh,Vatten,fixed_price_3_years,2026-03-22,SE1
+"Fastpris 3 år Vind, Elområde 1, 2 och 3",Östra Kinds Elkraft AB,12.00 öre/kWh,78.36 öre/kWh,0,0,0,22.59 öre/kWh,112.95 öre/kWh,Vind,fixed_price_3_years,2026-03-22,SE1
+"Fast pris 3 år Elområde 1,2 och 3",Njudung Energi AB,12.60 öre/kWh,78.80 öre/kWh,0,0,0,22.85 öre/kWh,114.25 öre/kWh,Fossilt,fixed_price_3_years,2026-03-22,SE1
+Fastpris 3 år,Rödeby Energi AB,21.00 öre/kWh,70.40 öre/kWh,0,0,0,22.85 öre/kWh,114.25 öre/kWh,Sol_Vind_Vatten_Kärnkraft,fixed_price_3_years,2026-03-22,SE1
+Fast Avtal 3 år,PiteEnergi Handel AB,21.60 öre/kWh,69.90 öre/kWh,0,0,0,22.88 öre/kWh,114.38 öre/kWh,Sol_Vatten,fixed_price_3_years,2026-03-22,SE1
+Fast elpris 3 år,Skellefteå Kraft AB,23.52 öre/kWh,68.10 öre/kWh,0,0,0,22.91 öre/kWh,114.53 öre/kWh,Vind_Vatten,fixed_price_3_years,2026-03-22,SE1
+"Fastpris 3 år för elområde 1, 2 och 3",Bengtsfors Energi Handel AB,12.00 öre/kWh,79.90 öre/kWh,0,0,0,22.98 öre/kWh,114.88 öre/kWh,Vatten,fixed_price_3_years,2026-03-22,SE1
+"Fastpris 3 år, elområde 1, 2 och 3",Västervik Miljö & Energi AB,12.60 öre/kWh,79.40 öre/kWh,0,0,0,23.00 öre/kWh,115.00 öre/kWh,Vatten,fixed_price_3_years,2026-03-22,SE1
+Fossilfritt avtal - Fast elpris 3 år,Vattenfall AB,19.20 öre/kWh,73.50 öre/kWh,0,0,0,23.18 öre/kWh,115.88 öre/kWh,Vatten_Kärnkraft,fixed_price_3_years,2026-03-22,SE1
+Fossilfritt avtal - Fast elpris 3 år med Kärnkraft,Vattenfall AB,19.20 öre/kWh,73.50 öre/kWh,0,0,0,23.18 öre/kWh,115.88 öre/kWh,Kärnkraft,fixed_price_3_years,2026-03-22,SE1
+Fossilfritt avtal - Fast elpris 3 år med Vind- eller Vattenkraft,Vattenfall AB,19.20 öre/kWh,73.50 öre/kWh,0,0,0,23.18 öre/kWh,115.88 öre/kWh,Vind_Vatten,fixed_price_3_years,2026-03-22,SE1
+Vattenel fast avtal 3 år,Norrtälje Energi Försäljnings AB,12.00 öre/kWh,80.90 öre/kWh,0,0,0,23.23 öre/kWh,116.13 öre/kWh,Vatten,fixed_price_3_years,2026-03-22,SE1
+Bra Miljöval fast avtal 3 år,Norrtälje Energi Försäljnings AB,12.00 öre/kWh,81.40 öre/kWh,0,0,0,23.35 öre/kWh,116.75 öre/kWh,Vind_Vatten_Bra miljöval,fixed_price_3_years,2026-03-22,SE1
+Fossilfritt avtal - Fast elpris 3 år med Solkraft,Vattenfall AB,19.20 öre/kWh,74.50 öre/kWh,0,0,0,23.43 öre/kWh,117.13 öre/kWh,Sol,fixed_price_3_years,2026-03-22,SE1
+Fastpris 36 mån,Borås Elhandel AB,23.52 öre/kWh,70.90 öre/kWh,0,0,0,23.61 öre/kWh,118.03 öre/kWh,Sol_Vind_Vatten_Biobränsle_Kärnkraft,fixed_price_3_years,2026-03-22,SE1
+Fast Pris 3 år Fossilfritt,Varberg Energimarknad AB,14.60 öre/kWh,80.39 öre/kWh,0,0,0,23.75 öre/kWh,118.74 öre/kWh,Sol_Vind_Vatten_Biobränsle_Kärnkraft,fixed_price_3_years,2026-03-22,SE1
+1899-el fast avtal 3 år,Norrtälje Energi Försäljnings AB,12.00 öre/kWh,83.00 öre/kWh,0,0,0,23.75 öre/kWh,118.75 öre/kWh,Sol_Biobränsle,fixed_price_3_years,2026-03-22,SE1
+Fast Pris 3 år Förnybart,Varberg Energimarknad AB,14.60 öre/kWh,81.36 öre/kWh,0,0,0,23.99 öre/kWh,119.95 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_3_years,2026-03-22,SE1
+"Fastpris 3 år, elområde 1, 2 och 3",Härryda Energi Elhandel AB,16.80 öre/kWh,79.40 öre/kWh,0,0,0,24.05 öre/kWh,120.25 öre/kWh,Kärnkraft,fixed_price_3_years,2026-03-22,SE1
+"Fast pris 3 år, VindEL Elområde 1,2 och 3",Njudung Energi AB,12.60 öre/kWh,83.80 öre/kWh,0,0,0,24.10 öre/kWh,120.50 öre/kWh,Vind,fixed_price_3_years,2026-03-22,SE1
+"Fast pris 3 år,Vattenkraft Elområde 1,2 och 3",Njudung Energi AB,12.60 öre/kWh,83.80 öre/kWh,0,0,0,24.10 öre/kWh,120.50 öre/kWh,Vatten,fixed_price_3_years,2026-03-22,SE1
+Fastpris 3 år,Västerbergslagens Elförsäljning AB,21.60 öre/kWh,75.30 öre/kWh,0,0,0,24.23 öre/kWh,121.13 öre/kWh,Vatten_Kärnkraft,fixed_price_3_years,2026-03-22,SE1
+Fast pris 3 år Förnybar El Elområde 1,E.ON,26.40 öre/kWh,71.00 öre/kWh,0,0,0,24.35 öre/kWh,121.75 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_3_years,2026-03-22,SE1
+Fossilfritt - Fastpris 3 år,Falkenberg Energi AB,21.60 öre/kWh,76.00 öre/kWh,0,0,0,24.40 öre/kWh,122.00 öre/kWh,Kärnkraft,fixed_price_3_years,2026-03-22,SE1
+"Fast pris 3 år, elområde 1, 2 och 3",Lerum Elhandel AB,18.70 öre/kWh,79.20 öre/kWh,0,0,0,24.48 öre/kWh,122.38 öre/kWh,Kärnkraft,fixed_price_3_years,2026-03-22,SE1
+"Fast pris 3 år Elområde 1,2,3",Gotlands Elförsäljning AB,21.60 öre/kWh,77.00 öre/kWh,0,0,0,24.65 öre/kWh,123.25 öre/kWh,Sol_Vind_Vatten_Kärnkraft,fixed_price_3_years,2026-03-22,SE1
+Bra Miljöval - Fastpris 3 år,Falkenberg Energi AB,21.60 öre/kWh,78.00 öre/kWh,0,0,0,24.90 öre/kWh,124.50 öre/kWh,Sol_Vind_Vatten_Bra miljöval,fixed_price_3_years,2026-03-22,SE1
+"Fast pris 3 år Vind elområde 1,2,3",Gotlands Elförsäljning AB,21.60 öre/kWh,80.00 öre/kWh,0,0,0,25.40 öre/kWh,127.00 öre/kWh,Vind,fixed_price_3_years,2026-03-22,SE1
+"Fast pris 3 år vatten elområde 1,2,3",Gotlands Elförsäljning AB,21.60 öre/kWh,80.00 öre/kWh,0,0,0,25.40 öre/kWh,127.00 öre/kWh,Vatten,fixed_price_3_years,2026-03-22,SE1
+Fastpris 3 år Vattenkraft,Västerbergslagens Elförsäljning AB,21.60 öre/kWh,82.30 öre/kWh,0,0,0,25.98 öre/kWh,129.88 öre/kWh,Vatten,fixed_price_3_years,2026-03-22,SE1
+Fast pris 36 månader,Telinet Energi AB,33.12 öre/kWh,71.00 öre/kWh,0,0,0,26.03 öre/kWh,130.15 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_3_years,2026-03-22,SE1
+"Fast pris 36 månader med fossilfri el - Lägenhet, för elområde 1",Fortum,23.52 öre/kWh,83.75 öre/kWh,0,0,0,26.82 öre/kWh,134.09 öre/kWh,Kärnkraft,fixed_price_3_years,2026-03-22,SE1
+Fast pris 3 år,Halmstads Energi och Miljö AB,16.80 öre/kWh,95.00 öre/kWh,0,0,0,27.95 öre/kWh,139.75 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_3_years,2026-03-22,SE1
+"Fast pris 36 månader med Miljöpaket - Lägenhet, för elområde 1",Fortum,45.12 öre/kWh,83.75 öre/kWh,0,0,0,32.22 öre/kWh,161.09 öre/kWh,Sol_Vind_Vatten,fixed_price_3_years,2026-03-22,SE1
+FAST PRIS 4 ÅR,CHEAP ENERGY AB,0.00 öre/kWh,64.72 öre/kWh,0,0,0,16.18 öre/kWh,80.90 öre/kWh,Fossilt,fixed_price_4_years,2026-03-22,SE1
+"FAST PRIS 4 ÅR, NORDENMILJÖ",CHEAP ENERGY AB,0.00 öre/kWh,64.72 öre/kWh,0,0,0,16.18 öre/kWh,80.90 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_4_years,2026-03-22,SE1
+FAST PRIS 4 ÅR,STOCKHOLMS ELBOLAG AB,19.20 öre/kWh,53.90 öre/kWh,0,0,0,18.27 öre/kWh,91.38 öre/kWh,Fossilt,fixed_price_4_years,2026-03-22,SE1
+Fast elpris 4 år återvunnnen el,Bodens Energi AB,16.80 öre/kWh,56.40 öre/kWh,0,0,0,18.30 öre/kWh,91.50 öre/kWh,Fossilt,fixed_price_4_years,2026-03-22,SE1
+Fast elpris 4 år förnybar el,Bodens Energi AB,16.80 öre/kWh,57.10 öre/kWh,0,0,0,18.48 öre/kWh,92.38 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_4_years,2026-03-22,SE1
+"FAST PRIS 4 ÅR, 100 % FOSSILFRI EL",STOCKHOLMS ELBOLAG AB,19.20 öre/kWh,55.50 öre/kWh,0,0,0,18.68 öre/kWh,93.38 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_4_years,2026-03-22,SE1
+FAST PRIS 4 ÅR,SVEALANDS ELBOLAG AB,33.12 öre/kWh,54.90 öre/kWh,0,0,0,22.00 öre/kWh,110.03 öre/kWh,Fossilt,fixed_price_4_years,2026-03-22,SE1
+"FAST PRIS 4 ÅR, 100 % FOSSILFRI EL",SVEALANDS ELBOLAG AB,33.12 öre/kWh,56.50 öre/kWh,0,0,0,22.41 öre/kWh,112.03 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_4_years,2026-03-22,SE1
+Fast pris 5 år,SVEKRAFT AB,0.00 öre/kWh,64.79 öre/kWh,0,0,0,16.20 öre/kWh,80.99 öre/kWh,Fossilt,fixed_price_5_years,2026-03-22,SE1
+"Fast pris 5 år, 100 % Fossilfri el",SVEKRAFT AB,0.00 öre/kWh,64.79 öre/kWh,0,0,0,16.20 öre/kWh,80.99 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_5_years,2026-03-22,SE1
+FAST PRIS 5 ÅR,CHEAP ENERGY AB,0.00 öre/kWh,71.92 öre/kWh,0,0,0,17.98 öre/kWh,89.90 öre/kWh,Fossilt,fixed_price_5_years,2026-03-22,SE1
+"FAST PRIS 5 ÅR, NORDENMILJÖ",CHEAP ENERGY AB,0.00 öre/kWh,71.92 öre/kWh,0,0,0,17.98 öre/kWh,89.90 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_5_years,2026-03-22,SE1
+Fast elpris 5 år återvunnnen el,Bodens Energi AB,16.80 öre/kWh,56.90 öre/kWh,0,0,0,18.43 öre/kWh,92.13 öre/kWh,Fossilt,fixed_price_5_years,2026-03-22,SE1
+FAST PRIS 5 ÅR,STOCKHOLMS ELBOLAG AB,19.20 öre/kWh,54.90 öre/kWh,0,0,0,18.52 öre/kWh,92.63 öre/kWh,Fossilt,fixed_price_5_years,2026-03-22,SE1
+Fast elpris 5 år förnybar el,Bodens Energi AB,16.80 öre/kWh,57.60 öre/kWh,0,0,0,18.60 öre/kWh,93.00 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_5_years,2026-03-22,SE1
+"FAST PRIS 5 ÅR, 100 % FOSSILFRI EL",STOCKHOLMS ELBOLAG AB,19.20 öre/kWh,56.50 öre/kWh,0,0,0,18.93 öre/kWh,94.63 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_5_years,2026-03-22,SE1
+FAST PRIS 5 ÅR,SVEALANDS ELBOLAG AB,33.12 öre/kWh,57.90 öre/kWh,0,0,0,22.75 öre/kWh,113.78 öre/kWh,Fossilt,fixed_price_5_years,2026-03-22,SE1
+"FAST PRIS 5 ÅR, 100 % FOSSILFRI EL",SVEALANDS ELBOLAG AB,33.12 öre/kWh,59.50 öre/kWh,0,0,0,23.16 öre/kWh,115.78 öre/kWh,Sol_Vind_Vatten_Biobränsle,fixed_price_5_years,2026-03-22,SE1
